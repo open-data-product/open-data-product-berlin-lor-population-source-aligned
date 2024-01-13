@@ -1,28 +1,30 @@
-# Data Product Canvas - Berlin LOR population
+# Data Product Canvas - Berlin LOR Population
 
 ## Input Ports
 
 **Input ports define the format and protocol in which data can be read (database, file, API, visualizations)**
 
-This data product uses statistical population data provided by [Amt für Statistik Berlin-Brandenburg](https://www.statistik-berlin-brandenburg.de/) available under the following  URLs
+This data product uses statistical population data provided
+by [Amt für Statistik Berlin-Brandenburg](https://www.statistik-berlin-brandenburg.de/) available under the following
+URLs
 
-* [SB_A01-06-00_2015h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/2802e6ecb8d9fd52/85b4d6d11870/SB_A01-06-00_2015h02_BE.xlsx)
 * [SB_A01-06-00_2015h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/6f9755e94509ab97/a56498f8dbdc/SB_A01-06-00_2015h01_BE.xlsx)
-* [SB_A01-16-00_2016h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/979c90dbc301de4d/1efcc43619ce/SB_A01-16-00_2016h02_BE.xlsx)
+* [SB_A01-06-00_2015h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/2802e6ecb8d9fd52/85b4d6d11870/SB_A01-06-00_2015h02_BE.xlsx)
 * [SB_A01-16-00_2016h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/421cc6dc52d652b6/3010b7e96ff5/SB_A01-16-00_2016h01_BE.xlsx)
-* [SB_A01-16-00_2017h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/48f125ea299ead12/11beeeae68ae/SB_A01-16-00_2017h02_BE.xlsx)
+* [SB_A01-16-00_2016h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/979c90dbc301de4d/1efcc43619ce/SB_A01-16-00_2016h02_BE.xlsx)
 * [SB_A01-16-00_2017h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/41d7775d7bc68d18/497860ed6161/SB_A01-16-00_2017h01_BE.xlsx)
-* [SB_A01-16-00_2018h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/dd88b0a7bf250690/228278f7a800/SB_A01-16-00_2018h02_BE.xlsx)
+* [SB_A01-16-00_2017h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/48f125ea299ead12/11beeeae68ae/SB_A01-16-00_2017h02_BE.xlsx)
 * [SB_A01-16-00_2018h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/cf430bdc7c4e8c0c/99b5f5848495/SB_A01-16-00_2018h01_BE.xlsx)
-* [SB_A01-16-00_2019h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/d608a907aa6e2840/21cc00c944e8/SB_A01-16-00_2019h02_BE.xlsx)
+* [SB_A01-16-00_2018h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/dd88b0a7bf250690/228278f7a800/SB_A01-16-00_2018h02_BE.xlsx)
 * [SB_A01-16-00_2019h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/b2d2041bc9db2321/3e296562b672/SB_A01-16-00_2019h01_BE.xlsx)
-* [SB_A01-16-00_2020h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/ebfcd0da83f4fef4/474f2236e32a/SB_A01-16-00_2020h02_BE.xlsx)
+* [SB_A01-16-00_2019h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/d608a907aa6e2840/21cc00c944e8/SB_A01-16-00_2019h02_BE.xlsx)
 * [SB_A01-16-00_2020h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/3e5e56537345a81f/890313eac68f/SB_A01-16-00_2020h01_BE.xlsx)
-* [SB_A01-16-00_2021h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/1d463bd3704c3925/631339d32c47/SB_A01-16-00_2021h02_BE.xlsx)
+* [SB_A01-16-00_2020h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/ebfcd0da83f4fef4/474f2236e32a/SB_A01-16-00_2020h02_BE.xlsx)
 * [SB_A01-16-00_2021h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/5b32adf9484d9541/d8123c9bb163/SB_A01-16-00_2021h01_BE.xlsx)
-* [SB_A01-16-00_2022h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/8d20092b505401b6/1faf9c3fde8e/SB_A01-16-00_2022h02_BE.xlsx)
+* [SB_A01-16-00_2021h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/1d463bd3704c3925/631339d32c47/SB_A01-16-00_2021h02_BE.xlsx)
 * [SB_A01-16-00_2022h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/e34ccbeade16c925/363cca7059d1/SB_A01-16-00_2022h01_BE.xlsx)
-* [SB_A01-16-00_2022h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/275a84c0ed74b0ff/8eae285aaac0/SB_A01-05-00_2023h01_BE.xlsx)
+* [SB_A01-16-00_2022h02_BE.xlsx](https://download.statistik-berlin-brandenburg.de/8d20092b505401b6/1faf9c3fde8e/SB_A01-16-00_2022h02_BE.xlsx)
+* [SB_A01-16-00_2023h01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/275a84c0ed74b0ff/8eae285aaac0/SB_A01-05-00_2023h01_BE.xlsx)
 
 ## Data Product Design
 
@@ -64,7 +66,7 @@ The data of this data product is available under the following URLs
 **Domain, data product owner, organizational unit, license, version and expiration date**
 
 * ownership: Open Lifeworlds
-* domain: geodata
+* domain: statistics
 * license: CC-BY-4.0
 
 ### Schema
@@ -86,14 +88,22 @@ The data of this data product is available under the following URLs
 * `inhabitants_age_55_65`: number of inhabitants between the age of 55 and 65
 * `inhabitants_age_above_65`: number of inhabitants above the age of 65
 * `inhabitants_female`: number of female inhabitants
-* `inhabitants_with_migration_background_age_below_6`:  number of inhabitants with migration background below the age of 6
-* `inhabitants_with_migration_background_age_6_15`:     number of inhabitants with migration background between the age of 6 and 15
-* `inhabitants_with_migration_background_age_15_18`:    number of inhabitants with migration background between the age of 15 and 18
-* `inhabitants_with_migration_background_age_18_27`:    number of inhabitants with migration background between the age of 18 and 27
-* `inhabitants_with_migration_background_age_27_45`:    number of inhabitants with migration background between the age of 27 and 45
-* `inhabitants_with_migration_background_age_45_55`:    number of inhabitants with migration background between the age of 45 and 55
-* `inhabitants_with_migration_background_age_55_65`:    number of inhabitants with migration background between the age of 55 and 65
-* `inhabitants_with_migration_background_age_above_65`: number of inhabitants with migration background above the age of 65
+* `inhabitants_with_migration_background_age_below_6`:  number of inhabitants with migration background below the age of
+  6
+* `inhabitants_with_migration_background_age_6_15`:     number of inhabitants with migration background between the age
+  of 6 and 15
+* `inhabitants_with_migration_background_age_15_18`:    number of inhabitants with migration background between the age
+  of 15 and 18
+* `inhabitants_with_migration_background_age_18_27`:    number of inhabitants with migration background between the age
+  of 18 and 27
+* `inhabitants_with_migration_background_age_27_45`:    number of inhabitants with migration background between the age
+  of 27 and 45
+* `inhabitants_with_migration_background_age_45_55`:    number of inhabitants with migration background between the age
+  of 45 and 55
+* `inhabitants_with_migration_background_age_55_65`:    number of inhabitants with migration background between the age
+  of 55 and 65
+* `inhabitants_with_migration_background_age_above_65`: number of inhabitants with migration background above the age of
+  65
 * `inhabitants_with_migration_background_female`:       number of female inhabitants with migration background
 * `inhabitants_from_european_union`: number of inhabitants from European Union
 * `inhabitants_from_france`: number of inhabitants from France

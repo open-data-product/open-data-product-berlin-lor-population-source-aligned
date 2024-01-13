@@ -1,8 +1,8 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population/issues)
+[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population">
+  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned">
     <img src="logo_with_text.png" alt="Logo" height="80">
   </a>
 
@@ -47,7 +47,7 @@ Examples:
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population/issues) for a list of proposed features (and
+See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/issues) for a list of proposed features (and
  known issues).
 
 ## License
