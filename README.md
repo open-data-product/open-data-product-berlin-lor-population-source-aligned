@@ -6,10 +6,10 @@
     <img src="logo_with_text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Berlin LOR population</h1>
+  <h1 align="center">Open Lifeworlds Data Product - Berlin LOR Population (source-aligned)</h1>
 
   <p align="center">
-    Data product providing Berlin LOR population data</a> 
+    Source-aligned data product providing Berlin LOR population data</a> 
   </p>
 </p>
 
