@@ -58,6 +58,15 @@ metadata:
     - inhabitants_from_undefined: number of inhabitants from an undefined country
 description: This data product provides Berlin population data on different LOR hierarchy levels
 input_ports:
+  - id: berlin-lor-population-2023-01
+    metadata:
+      name: Einwohner und Einwohnerinnen in Berlin 1. Halbjahr 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-02-14
+    files:
+      - https://download.statistik-berlin-brandenburg.de/4b210ef949095fa5/2aca48a07f8e/SB_A01-16-00_2023h01_BE.xlsx
   - id: berlin-lor-population-2022-02
     metadata:
       name: Einwohner und Einwohnerinnen in Berlin 2. Halbjahr 2022

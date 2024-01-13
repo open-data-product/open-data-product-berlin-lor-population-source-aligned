@@ -62,5 +62,7 @@ def get_results_file_name(source_file_name):
         return "berlin-lor-population-2022-01.xlsx"
     elif source_file_name == "SB_A01-16-00_2022h02_BE.xlsx":
         return "berlin-lor-population-2022-02.xlsx"
+    elif source_file_name == "SB_A01-16-00_2023h01_BE.xlsx":
+        return "berlin-lor-population-2023-01.xlsx"
     else:
         return source_file_name
