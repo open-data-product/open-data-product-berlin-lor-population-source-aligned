@@ -215,28 +215,28 @@ output_ports:
   - id: berlin-lor-population-csv
     metadata:
       name: Berlin LOR population csv
-      author: Open Lifeworlds
-      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/tree/main/data
+      author: Open Data Product
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data
       license: CC-BY-4.0
       updated: 2024-01-13
     files:
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-01/berlin-lor-population-2015-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-02/berlin-lor-population-2015-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2016-01/berlin-lor-population-2016-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2016-02/berlin-lor-population-2016-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2017-01/berlin-lor-population-2017-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2017-02/berlin-lor-population-2017-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2018-01/berlin-lor-population-2018-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2018-02/berlin-lor-population-2018-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2019-01/berlin-lor-population-2019-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2019-02/berlin-lor-population-2019-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2020-01/berlin-lor-population-2020-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2020-02/berlin-lor-population-2020-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2021-01/berlin-lor-population-2021-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2021-02/berlin-lor-population-2021-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-01/berlin-lor-population-2022-01.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-02/berlin-lor-population-2022-02.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2023-01/berlin-lor-population-2023-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-01/berlin-lor-population-2015-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-02/berlin-lor-population-2015-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2016-01/berlin-lor-population-2016-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2016-02/berlin-lor-population-2016-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2017-01/berlin-lor-population-2017-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2017-02/berlin-lor-population-2017-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2018-01/berlin-lor-population-2018-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2018-02/berlin-lor-population-2018-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2019-01/berlin-lor-population-2019-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2019-02/berlin-lor-population-2019-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2020-01/berlin-lor-population-2020-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2020-02/berlin-lor-population-2020-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2021-01/berlin-lor-population-2021-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2021-02/berlin-lor-population-2021-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-01/berlin-lor-population-2022-01.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-02/berlin-lor-population-2022-02.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2023-01/berlin-lor-population-2023-01.csv
 metrics:
   - quality:
       - completeness
