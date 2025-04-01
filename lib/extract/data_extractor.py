@@ -17,14 +17,13 @@ def extract_data(manifest_path, results_path, clean=False, quiet=False):
 
         # Iterate over input ports
         for input_port in manifest["input_ports"]:
-
             # Make results path
             os.makedirs(os.path.join(results_path, input_port["id"]), exist_ok=True)
 
             # Iterate over files
             for url in input_port["files"]:
                 # Determine file path
-                file_name = url.rsplit('/', 1)[-1]
+                file_name = url.rsplit("/", 1)[-1]
                 file_path = os.path.join(results_path, input_port["id"], file_name)
 
                 # Download file
@@ -33,7 +32,7 @@ def extract_data(manifest_path, results_path, clean=False, quiet=False):
                     file_name=file_name,
                     url=url,
                     clean=clean,
-                    quiet=quiet
+                    quiet=quiet,
                 )
 
 

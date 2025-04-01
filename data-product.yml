@@ -1,9 +1,12 @@
 ---
 id: berlin-lor-population-source-aligned
-name: Berlin LOR Population (source-aligned)
 metadata:
-  ownership: Open Lifeworlds
-  domain: statistics
+  name: Berlin LOR Population (source-aligned)
+  owner: Open Data product
+  description: Source-aligned data product providing Berlin LOR population data
+  url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned
+  license: CC-BY 4.0
+  updated: 2025-06-01
   schema:
     - inhabitants: number of inhabitants
     - inhabitants_with_migration_background: number of inhabitants with migration background
@@ -56,169 +59,204 @@ metadata:
     - inhabitants_from_vietnam: number of inhabitants from Vietnam
     - inhabitants_from_united_states: number of inhabitants from United States
     - inhabitants_from_undefined: number of inhabitants from an undefined country
-description: This data product provides Berlin population data on different LOR hierarchy levels
 input_ports:
   - id: berlin-lor-population-2023-01
     metadata:
       name: Einwohner und Einwohnerinnen in Berlin 1. Halbjahr 2023
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2023-02-14
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/4b210ef949095fa5/2aca48a07f8e/SB_A01-16-00_2023h01_BE.xlsx
   - id: berlin-lor-population-2022-02
     metadata:
       name: Einwohner und Einwohnerinnen in Berlin 2. Halbjahr 2022
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2023-02-14
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/8d20092b505401b6/1faf9c3fde8e/SB_A01-16-00_2022h02_BE.xlsx
   - id: berlin-lor-population-2022-01
     metadata:
       name: Einwohner und Einwohnerinnen in Berlin 1. Halbjahr 2022
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2022-08-18
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/e34ccbeade16c925/363cca7059d1/SB_A01-16-00_2022h01_BE.xlsx
   - id: berlin-lor-population-2021-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin 2. Halbjahr 2021
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2022-02-04
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/1d463bd3704c3925/631339d32c47/SB_A01-16-00_2021h02_BE.xlsx
   - id: berlin-lor-population-2021-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin 1. Halbjahr 2021
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2021-09-22
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/5b32adf9484d9541/d8123c9bb163/SB_A01-16-00_2021h01_BE.xlsx
   - id: berlin-lor-population-2020-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2021-02-10
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/ebfcd0da83f4fef4/474f2236e32a/SB_A01-16-00_2020h02_BE.xlsx
   - id: berlin-lor-population-2020-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2020-08-26
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/3e5e56537345a81f/890313eac68f/SB_A01-16-00_2020h01_BE.xlsx
   - id: berlin-lor-population-2019-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2020-04-07
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/d608a907aa6e2840/21cc00c944e8/SB_A01-16-00_2019h02_BE.xlsx
   - id: berlin-lor-population-2019-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2019-08-28
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/b2d2041bc9db2321/3e296562b672/SB_A01-16-00_2019h01_BE.xlsx
   - id: berlin-lor-population-2018-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2019-02-21
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/dd88b0a7bf250690/228278f7a800/SB_A01-16-00_2018h02_BE.xlsx
   - id: berlin-lor-population-2018-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2018-10-02
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/cf430bdc7c4e8c0c/99b5f5848495/SB_A01-16-00_2018h01_BE.xlsx
   - id: berlin-lor-population-2017-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2018-02-27
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/48f125ea299ead12/11beeeae68ae/SB_A01-16-00_2017h02_BE.xlsx
   - id: berlin-lor-population-2017-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2017-08-24
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/41d7775d7bc68d18/497860ed6161/SB_A01-16-00_2017h01_BE.xlsx
   - id: berlin-lor-population-2016-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2017-03-09
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/979c90dbc301de4d/1efcc43619ce/SB_A01-16-00_2016h02_BE.xlsx
   - id: berlin-lor-population-2016-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2016-08-08
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/421cc6dc52d652b6/3010b7e96ff5/SB_A01-16-00_2016h01_BE.xlsx
   - id: berlin-lor-population-2015-02
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2016-03-11
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/2802e6ecb8d9fd52/85b4d6d11870/SB_A01-06-00_2015h02_BE.xlsx
   - id: berlin-lor-population-2015-01
     metadata:
       name: Einwohnerinnen und Einwohner im Land Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://www.statistik-berlin-brandenburg.de/a-i-16-hj
       license: CC-BY-3.0-Namensnennung
       updated: 2016-03-01
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/6f9755e94509ab97/a56498f8dbdc/SB_A01-06-00_2015h01_BE.xlsx
 output_ports:
   - id: berlin-lor-population-csv
     metadata:
       name: Berlin LOR population csv
-      author: Open Data Product
+      owner: Open Data Product
+      description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data
       license: CC-BY-4.0
       updated: 2024-01-13
+      schema: []
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-01/berlin-lor-population-2015-01.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2015-02/berlin-lor-population-2015-02.csv
@@ -237,11 +275,15 @@ output_ports:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-01/berlin-lor-population-2022-01.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2022-02/berlin-lor-population-2022-02.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/berlin-lor-population-2023-01/berlin-lor-population-2023-01.csv
-metrics:
-  - quality:
-      - completeness
-  - operational:
+observability:
+  quality:
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
 classification: source-aligned
+ubiquitous_language:
 tags:
   - berlin
   - lor

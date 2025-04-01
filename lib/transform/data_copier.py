@@ -8,7 +8,6 @@ from lib.tracking_decorator import TrackingDecorator
 def copy_data(source_path, results_path, clean=False, quiet=False):
     # Iterate over files
     for subdir, dirs, files in sorted(os.walk(source_path)):
-
         # Make results path
         subdir = subdir.replace(f"{source_path}/", "")
         os.makedirs(os.path.join(results_path, subdir), exist_ok=True)

@@ -2,11 +2,8 @@ from datetime import datetime
 
 
 class TrackingDecorator(object):
-
     def track_time(func):
-
         def wrap(*args, **kwargs):
-
             start_time = datetime.now()
 
             print("\n" + func.__qualname__ + " started")

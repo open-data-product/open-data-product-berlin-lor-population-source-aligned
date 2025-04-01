@@ -2,6 +2,7 @@ import getopt
 import os
 import sys
 
+from lib.config.data_product_manifest_loader import load_data_product_manifest
 from lib.extract.data_extractor import extract_data
 from lib.load.data_loader import load_data
 from lib.tracking_decorator import TrackingDecorator
@@ -28,7 +29,9 @@ def main(argv):
         if opt in ("-h", "--help"):
             print("main.py")
             print("--help                           show this help")
-            print("--clean                          clean intermediate results before start")
+            print(
+                "--clean                          clean intermediate results before start"
+            )
             print("--quiet                          do not log outputs")
             sys.exit()
         elif opt in ("-c", "--clean"):
@@ -41,24 +44,37 @@ def main(argv):
     workspace_path = os.path.join(script_path, "workspace")
     data_path = os.path.join(script_path, "data")
 
+    data_product_manifest = load_data_product_manifest(config_path=script_path)
+
     #
     # Extract
     #
 
-    extract_data(manifest_path=manifest_path, results_path=raw_path, clean=clean, quiet=quiet)
+    extract_data(
+        manifest_path=manifest_path, results_path=raw_path, clean=clean, quiet=quiet
+    )
 
     #
     # Transform
     #
 
-    copy_data(source_path=raw_path, results_path=workspace_path, clean=clean, quiet=quiet)
-    convert_data_to_csv(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
+    copy_data(
+        source_path=raw_path, results_path=workspace_path, clean=clean, quiet=quiet
+    )
+    convert_data_to_csv(
+        source_path=workspace_path,
+        results_path=workspace_path,
+        clean=clean,
+        quiet=quiet,
+    )
 
     #
     # Load
     #
 
-    load_data(source_path=workspace_path, results_path=data_path, clean=clean, quiet=quiet)
+    load_data(
+        source_path=workspace_path, results_path=data_path, clean=clean, quiet=quiet
+    )
 
 
 if __name__ == "__main__":
