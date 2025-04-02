@@ -3,10 +3,11 @@
 
 *.DS_Store
 
-/venv/
+/.venv
 
 **/__pycache__/
 **/*.zip
+**/~*.xlsx
 
-/raw
-/workspace
+/data/01-bronze
+/data/02-silver/**/*.xlsx
