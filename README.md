@@ -1,4 +1,4 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/issues)
+[![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-berlin-lor-population-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-population-source-aligned/issues)
 
 <br />
 <p align="center">
@@ -20,29 +20,36 @@ See [data product canvas](docs/data-product-canvas.md).
 ### Built With
 
 * [Python](https://www.python.org/)
+* [uv](https://docs.astral.sh/uv/)
+* [ruff](https://docs.astral.sh/ruff/)
 
 ## Installation
 
-Install the following dependencies to fulfill the requirements for this project to run.
+Install uv, see https://github.com/astral-sh/uv?tab=readme-ov-file#installation.
 
-```shell script
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+```shell
+# On macOS and Linux.
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ## Usage
 
+Run this command to generate and activate a virtual environment.
+
+```shell
+uv venv
+source .venv/bin/activate
+```
+
 Run this command to start the main script.
 
-```shell script
-python main.py [OPTION]...
+```shell
+Usage: main.py [OPTIONS]
 
-  -h, --help                           show this help
-  -c, --clean                          clean intermediate results before start
-  -q, --quiet                          do not log outputs
-
-Examples:
-  python main.py -c
+Options:
+  --clean BOOLEAN  Regenerate results
+  --quiet BOOLEAN  Do not log outputs
+  --help           Show this message and exit.
 ```
 
 ## Roadmap
