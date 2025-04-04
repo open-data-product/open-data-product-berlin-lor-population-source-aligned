@@ -1,6 +1,6 @@
 import os
 
-from config.odps_loader import ODPS
+from lib.config.odps_loader import ODPS
 from lib.tracking_decorator import TrackingDecorator
 
 SCHEMA_AS_TABLE = True

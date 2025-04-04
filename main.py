@@ -1,21 +1,19 @@
-import getopt
 import os
 import sys
 
 import click
 
-from config.data_transformation_gold_loader import load_data_transformation_gold
-from config.data_transformation_silver_loader import load_data_transformation_silver
-from config.odps_loader import load_odps
-from documentation.data_product_canvas_generator import generate_data_product_canvas
-from documentation.data_product_manifest_updater import update_data_product_manifest
-from documentation.odps_canvas_generator import generate_odps_canvas
 from lib.config.data_product_manifest_loader import load_data_product_manifest
+from lib.config.data_transformation_gold_loader import load_data_transformation_gold
+from lib.config.data_transformation_silver_loader import load_data_transformation_silver
+from lib.config.odps_loader import load_odps
+from lib.documentation.data_product_canvas_generator import generate_data_product_canvas
+from lib.documentation.data_product_manifest_updater import update_data_product_manifest
+from lib.documentation.odps_canvas_generator import generate_odps_canvas
 from lib.extract.data_extractor import extract_data
-from lib.tracking_decorator import TrackingDecorator
+from lib.transform.data_aggregator import aggregate_data
 from lib.transform.data_copier import copy_data
 from lib.transform.data_csv_converter import convert_data_to_csv
-from transform.data_aggregator import aggregate_data
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)

@@ -9,7 +9,7 @@ from dacite import from_dict
 from yaml import MappingNode
 from yaml.constructor import ConstructorError
 
-from tracking_decorator import TrackingDecorator
+from lib.tracking_decorator import TrackingDecorator
 
 
 class SlaDimension(Enum):

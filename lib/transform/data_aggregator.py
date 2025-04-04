@@ -2,8 +2,8 @@ import os
 
 import pandas as pd
 
-from config.data_transformation_gold_loader import DataTransformation
-from tracking_decorator import TrackingDecorator
+from lib.config.data_transformation_gold_loader import DataTransformation
+from lib.tracking_decorator import TrackingDecorator
 
 
 @TrackingDecorator.track_time
