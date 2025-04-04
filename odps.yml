@@ -1,0 +1,25 @@
+---
+schema: https://opendataproducts.org/v3.1/schema/odps.yaml
+version: 3.1
+product:
+  dataHolder:
+    URL: "https://opendataproduct.de"
+  en:
+    name: "Berlin LOR Population source-aligned"
+    productID: "berlin-lor-population-source-aligned"
+    valueProposition: "Providing Berlin LOR population data"
+    description: "Data product providing Berlin LOR population data"
+    productSeries: "Berlin Timeseries Series"
+    visibility: "public"
+    status: "active"
+    version: "1.0"
+    categories:
+      - timeseries
+    tags:
+      - Berlin
+      - LOR
+      - population
+    type: "source-aligned"
+    logoURL: "https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png"
+    OutputFileFormats:
+      - csv

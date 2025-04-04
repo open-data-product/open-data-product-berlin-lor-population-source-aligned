@@ -4,8 +4,10 @@ import sys
 
 from config.data_transformation_gold_loader import load_data_transformation_gold
 from config.data_transformation_silver_loader import load_data_transformation_silver
+from config.odps_loader import load_odps
 from documentation.data_product_canvas_generator import generate_data_product_canvas
 from documentation.data_product_manifest_updater import update_data_product_manifest
+from documentation.odps_canvas_generator import generate_odps_canvas
 from lib.config.data_product_manifest_loader import load_data_product_manifest
 from lib.extract.data_extractor import extract_data
 from lib.tracking_decorator import TrackingDecorator
@@ -54,6 +56,7 @@ def main(argv):
         config_path=script_path
     )
     data_transformation_gold = load_data_transformation_gold(config_path=script_path)
+    odps = load_odps(config_path=script_path)
 
     #
     # Bronze: Integrate
@@ -111,6 +114,11 @@ def main(argv):
 
     generate_data_product_canvas(
         data_product_manifest=data_product_manifest,
+        docs_path=docs_path,
+    )
+
+    generate_odps_canvas(
+        odps=odps,
         docs_path=docs_path,
     )
 
