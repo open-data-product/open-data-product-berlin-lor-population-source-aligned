@@ -15,7 +15,7 @@
 
 ## About The Project
 
-See [data product canvas](docs/data-product-canvas.md).
+See [data product canvas](docs/data-product-canvas.md) and [ODPS canvas](./docs/odps-canvas.md).
 
 ### Built With
 
