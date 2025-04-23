@@ -3,17 +3,27 @@ import sys
 
 import click
 
-from lib.config.data_product_manifest_loader import load_data_product_manifest
-from lib.config.data_transformation_gold_loader import load_data_transformation_gold
-from lib.config.data_transformation_silver_loader import load_data_transformation_silver
-from lib.config.odps_loader import load_odps
-from lib.documentation.data_product_canvas_generator import generate_data_product_canvas
-from lib.documentation.data_product_manifest_updater import update_data_product_manifest
-from lib.documentation.odps_canvas_generator import generate_odps_canvas
-from lib.extract.data_extractor import extract_data
-from lib.transform.data_aggregator import aggregate_data
-from lib.transform.data_copier import copy_data
-from lib.transform.data_csv_converter import convert_data_to_csv
+from opendataproduct.config.data_product_manifest_loader import (
+    load_data_product_manifest,
+)
+from opendataproduct.config.data_transformation_gold_loader import (
+    load_data_transformation_gold,
+)
+from opendataproduct.config.data_transformation_silver_loader import (
+    load_data_transformation_silver,
+)
+from opendataproduct.config.odps_loader import load_odps
+from opendataproduct.document.data_product_canvas_generator import (
+    generate_data_product_canvas,
+)
+from opendataproduct.document.data_product_manifest_updater import (
+    update_data_product_manifest,
+)
+from opendataproduct.document.odps_canvas_generator import generate_odps_canvas
+from opendataproduct.extract.data_extractor import extract_data
+from opendataproduct.transform.data_aggregator import aggregate_data
+from opendataproduct.transform.data_copier import copy_data
+from opendataproduct.transform.data_csv_converter import convert_data_to_csv
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)

@@ -1,14 +1,13 @@
 [project]
 name = "open-data-product-berlin-lor-population-source-aligned"
 version = "0.1.0"
-description = "Add your description here"
+description = "Source-aligned data product providing Berlin LOR population data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "click>=8.2.1",
-    "dacite>=1.9.2",
-    "openpyxl>=3.1.5",
-    "pandas>=2.2.3",
-    "pyyaml>=6.0.2",
-    "requests>=2.32.3",
+    "open-data-product-python-lib",
 ]
+
+[tool.uv.sources]
+open-data-product-python-lib = { git = "https://github.com/open-data-product/open-data-product-python-lib.git" }
