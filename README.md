@@ -41,6 +41,12 @@ uv venv
 source .venv/bin/activate
 ```
 
+Run this command to re-install the Open Data Product Python library.
+
+```shell
+uv pip install --no-cache-dir git+https://github.com/open-data-product/open-data-product-python-lib.git
+```
+
 Run this command to start the main script.
 
 ```shell
