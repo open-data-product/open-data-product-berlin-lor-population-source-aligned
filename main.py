@@ -2,7 +2,6 @@ import os
 import sys
 
 import click
-
 from opendataproduct.config.data_product_manifest_loader import (
     load_data_product_manifest,
 )
@@ -21,8 +20,8 @@ from opendataproduct.document.data_product_manifest_updater import (
 )
 from opendataproduct.document.odps_canvas_generator import generate_odps_canvas
 from opendataproduct.extract.data_extractor import extract_data
-from opendataproduct.transform.data_aggregator import aggregate_data
 from opendataproduct.transform.data_copier import copy_data
+from opendataproduct.transform.data_csv_aggregator import aggregate_csv_data
 from opendataproduct.transform.data_csv_converter import convert_data_to_csv
 
 file_path = os.path.realpath(__file__)
@@ -81,7 +80,7 @@ def main(clean, quiet):
     # Gold: Aggregate
     #
 
-    aggregate_data(
+    aggregate_csv_data(
         data_transformation=data_transformation_gold,
         source_path=silver_path,
         results_path=gold_path,
