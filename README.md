@@ -3,13 +3,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned">
-    <img src="logo-with-text.png" alt="Logo" height="80">
+    <img src="logo-with-text.png" alt="Logo" style="height: 80px; ">
   </a>
 
   <h1 align="center">Berlin LOR Population (source-aligned)</h1>
 
   <p align="center">
-    Source-aligned data product providing Berlin LOR population data</a> 
+    Source-aligned data product providing Berlin LOR population data
   </p>
 </p>
 

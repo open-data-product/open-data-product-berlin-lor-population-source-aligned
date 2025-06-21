@@ -6,7 +6,7 @@ metadata:
   description: Source-aligned data product providing Berlin LOR population data
   url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned
   license: CC-BY 4.0
-  updated: 2025-07-02
+  updated: 2025-07-20
   schema:
     - name: inhabitants
       description: number of inhabitants
@@ -352,7 +352,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2015-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1.csv
@@ -366,7 +366,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2015-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1.csv
@@ -380,7 +380,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2016-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1.csv
@@ -394,7 +394,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2016-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1.csv
@@ -408,7 +408,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2017-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1.csv
@@ -422,7 +422,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2017-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1.csv
@@ -436,7 +436,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2018-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1.csv
@@ -450,7 +450,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2018-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1.csv
@@ -464,7 +464,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2019-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1.csv
@@ -478,7 +478,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2019-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1.csv
@@ -492,7 +492,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2020-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1.csv
@@ -506,7 +506,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2020-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1.csv
@@ -520,7 +520,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2021-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1.csv
@@ -534,7 +534,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2021-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1.csv
@@ -548,7 +548,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2022-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1.csv
@@ -562,7 +562,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2022-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1.csv
@@ -576,7 +576,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2023-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1.csv
@@ -590,7 +590,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2023-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1.csv
@@ -604,7 +604,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2024-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1.csv
@@ -618,7 +618,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2024-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1.csv
@@ -632,7 +632,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-city.csv
@@ -662,7 +662,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-city.csv
@@ -692,7 +692,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-city.csv
@@ -722,7 +722,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-city.csv
@@ -752,7 +752,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-city.csv
@@ -782,7 +782,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-city.csv
@@ -812,7 +812,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-city.csv
@@ -842,7 +842,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-city.csv
@@ -872,7 +872,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-city.csv
@@ -902,7 +902,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-city.csv
@@ -932,7 +932,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-city.csv
@@ -962,7 +962,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-city.csv
@@ -992,7 +992,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-city.csv
@@ -1022,7 +1022,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-city.csv
@@ -1052,7 +1052,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-city.csv
@@ -1082,7 +1082,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-city.csv
@@ -1112,7 +1112,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-city.csv
@@ -1142,7 +1142,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-city.csv
@@ -1172,7 +1172,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-01
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-city.csv
@@ -1202,7 +1202,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-02
       license: CC-BY 4.0
-      updated: 2025-07-02
+      updated: 2025-07-20
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-city.csv

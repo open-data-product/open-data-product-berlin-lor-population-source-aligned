@@ -1,2062 +1,265 @@
 ---
+attribute_groups:
+  t1: &t1
+    - { name: district_id, zfill: 2 }
+    - { name: forecast_area_id, zfill: 2 }
+    - { name: district_region_id, zfill: 2 }
+    - { name: planning_area_id, zfill: 2 }
+    - { name: inhabitants, type: int }
+    - { name: inhabitants_percentage, type: float }
+    - { name: inhabitants_with_migration_background, type: int }
+    - { name: inhabitants_with_migration_background_percentage, type: float }
+    - { name: inhabitants_germans, type: int }
+    - { name: inhabitants_germans_percentage, type: float }
+    - { name: inhabitants_germans_without_migration_background, type: int }
+    - { name: inhabitants_germans_without_migration_background_percentage, type: float }
+    - { name: inhabitants_germans_with_migration_background, type: int }
+    - { name: inhabitants_germans_with_migration_background_percentage, type: float }
+    - { name: inhabitants_foreigners, type: int }
+    - { name: inhabitants_foreigners_percentage, type: float }
+  t2: &t2
+    - name: district_id
+    - name: forecast_area_id
+    - name: district_region_id
+    - name: planning_area_id
+    - { name: inhabitants, type: int }
+    - { name: inhabitants_age_below_6, type: int }
+    - { name: inhabitants_age_6_15, type: int }
+    - { name: inhabitants_age_15_18, type: int }
+    - { name: inhabitants_age_18_27, type: int }
+    - { name: inhabitants_age_27_45, type: int }
+    - { name: inhabitants_age_45_55, type: int }
+    - { name: inhabitants_age_55_65, type: int }
+    - { name: inhabitants_age_above_65, type: int }
+    - { name: inhabitants_female, type: int }
+    - { name: inhabitants_foreigners, type: int }
+  t3: &t3
+    - name: district_id
+    - name: forecast_area_id
+    - name: district_region_id
+    - name: planning_area_id
+    - { name: inhabitants, type: int }
+    - { name: inhabitants_with_migration_background_age_below_6, type: int }
+    - { name: inhabitants_with_migration_background_age_6_15, type: int }
+    - { name: inhabitants_with_migration_background_age_15_18, type: int }
+    - { name: inhabitants_with_migration_background_age_18_27, type: int }
+    - { name: inhabitants_with_migration_background_age_27_45, type: int }
+    - { name: inhabitants_with_migration_background_age_45_55, type: int }
+    - { name: inhabitants_with_migration_background_age_55_65, type: int }
+    - { name: inhabitants_with_migration_background_age_above_65, type: int }
+    - { name: inhabitants_with_migration_background_female, type: int }
+    - { name: inhabitants_foreigners, type: int }
+  t4: &t4
+    - name: district_id
+    - name: forecast_area_id
+    - name: district_region_id
+    - name: planning_area_id
+    - { name: inhabitants, type: int }
+    - { name: inhabitants_from_european_union, type: int }
+    - { name: inhabitants_from_france, type: int }
+    - { name: inhabitants_from_greece, type: int }
+    - { name: inhabitants_from_italy, type: int }
+    - { name: inhabitants_from_austria, type: int }
+    - { name: inhabitants_from_spain, type: int }
+    - { name: inhabitants_from_poland, type: int }
+    - { name: inhabitants_from_bulgaria, type: int }
+    - { name: inhabitants_from_rumania, type: int }
+    - { name: inhabitants_from_croatia, type: int }
+    - { name: inhabitants_from_united_kingdom, type: int }
+    - { name: inhabitants_from_former_yugoslavia, type: int }
+    - { name: inhabitants_from_bosnia_herzegovina, type: int }
+    - { name: inhabitants_from_serbia, type: int }
+    - { name: inhabitants_from_former_soviet_union, type: int }
+    - { name: inhabitants_from_russia, type: int }
+    - { name: inhabitants_from_ukraine, type: int }
+    - { name: inhabitants_from_kazakhstan, type: int }
+    - { name: inhabitants_from_islamic_countries, type: int }
+    - { name: inhabitants_from_turkey, type: int }
+    - { name: inhabitants_from_iran, type: int }
+    - { name: inhabitants_from_arabic_countries, type: int }
+    - { name: inhabitants_from_lebanon, type: int }
+    - { name: inhabitants_from_syria, type: int }
+    - { name: inhabitants_from_vietnam, type: int }
+    - { name: inhabitants_from_united_states, type: int }
+    - { name: inhabitants_from_undefined, type: int }
 input_ports:
   - id: berlin-lor-population-2015-01
     files:
       - source_file_name: SB_A01-06-00_2015h01_BE.xlsx
         target_file_name: berlin-lor-population-2015-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2015-01-t1.csv
-            sheet_name: T1
-            names:
-              - { name: district_id, zfill: 2 }
-              - { name: forecast_area_id, zfill: 2 }
-              - { name: district_region_id, zfill: 2 }
-              - { name: planning_area_id, zfill: 2 }
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2015-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2015-02
     files:
       - source_file_name: SB_A01-06-00_2015h02_BE.xlsx
         target_file_name: berlin-lor-population-2015-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2015-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2015-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2015-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2015-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2016-01
     files:
       - source_file_name: SB_A01-16-00_2016h01_BE.xlsx
         target_file_name: berlin-lor-population-2016-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2016-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2016-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2016-02
     files:
       - source_file_name: SB_A01-16-00_2016h02_BE.xlsx
         target_file_name: berlin-lor-population-2016-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2016-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2016-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2016-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2016-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2017-01
     files:
       - source_file_name: SB_A01-16-00_2017h01_BE.xlsx
         target_file_name: berlin-lor-population-2017-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2017-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2017-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2017-02
     files:
       - source_file_name: SB_A01-16-00_2017h02_BE.xlsx
         target_file_name: berlin-lor-population-2017-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2017-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2017-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2017-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2017-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2018-01
     files:
       - source_file_name: SB_A01-16-00_2018h01_BE.xlsx
         target_file_name: berlin-lor-population-2018-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2018-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2018-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2018-02
     files:
       - source_file_name: SB_A01-16-00_2018h02_BE.xlsx
         target_file_name: berlin-lor-population-2018-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2018-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2018-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2018-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2018-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2019-01
     files:
       - source_file_name: SB_A01-16-00_2019h01_BE.xlsx
         target_file_name: berlin-lor-population-2019-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2019-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2019-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2019-02
     files:
       - source_file_name: SB_A01-16-00_2019h02_BE.xlsx
         target_file_name: berlin-lor-population-2019-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2019-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2019-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2019-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2019-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2020-01
     files:
       - source_file_name: SB_A01-16-00_2020h01_BE.xlsx
         target_file_name: berlin-lor-population-2020-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2020-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2020-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2020-02
     files:
       - source_file_name: SB_A01-16-00_2020h02_BE.xlsx
         target_file_name: berlin-lor-population-2020-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2020-02-t1.csv
-            sheet_name: T1a
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-02-t2.csv
-            sheet_name: T2a
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-02-t3.csv
-            sheet_name: T3a
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2020-02-t4.csv
-            sheet_name: T4a
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2020-02-t1.csv, sheet_name: T1a, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-02-t2.csv, sheet_name: T2a, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-02-t3.csv, sheet_name: T3a, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2020-02-t4.csv, sheet_name: T4a, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2021-01
     files:
       - source_file_name: SB_A01-16-00_2021h01_BE.xlsx
         target_file_name: berlin-lor-population-2021-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2021-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2021-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2021-02
     files:
       - source_file_name: SB_A01-16-00_2021h02_BE.xlsx
         target_file_name: berlin-lor-population-2021-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2021-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2021-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2021-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2021-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2022-01
     files:
       - source_file_name: SB_A01-16-00_2022h01_BE.xlsx
         target_file_name: berlin-lor-population-2022-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2022-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2022-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2022-02
     files:
       - source_file_name: SB_A01-16-00_2022h02_BE.xlsx
         target_file_name: berlin-lor-population-2022-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2022-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2022-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2022-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2022-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2023-01
     files:
       - source_file_name: SB_A01-16-00_2023h01_BE.xlsx
         target_file_name: berlin-lor-population-2023-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2023-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2023-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2023-02
     files:
       - source_file_name: SB_A01-16-00_2023h02_BE.xlsx
         target_file_name: berlin-lor-population-2023-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2023-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2023-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2023-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2023-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2024-01
     files:
       - source_file_name: SB_A01-16-00_2024h01_BE.xlsx
         target_file_name: berlin-lor-population-2024-01.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2024-01-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-01-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-01-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-01-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2024-01-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-01-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-01-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-01-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
   - id: berlin-lor-population-2024-02
     files:
       - source_file_name: SB_A01-16-00_2024h02_BE.xlsx
         target_file_name: berlin-lor-population-2024-02.xlsx
         datasets:
-          - target_file_name: berlin-lor-population-2024-02-t1.csv
-            sheet_name: T1
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_percentage, type: float }
-              - { name: inhabitants_with_migration_background, type: int }
-              - { name: inhabitants_with_migration_background_percentage, type: float }
-              - { name: inhabitants_germans, type: int }
-              - { name: inhabitants_germans_percentage, type: float }
-              - { name: inhabitants_germans_without_migration_background, type: int }
-              - { name: inhabitants_germans_without_migration_background_percentage, type: float }
-              - { name: inhabitants_germans_with_migration_background, type: int }
-              - { name: inhabitants_germans_with_migration_background_percentage, type: float }
-              - { name: inhabitants_foreigners, type: int }
-              - { name: inhabitants_foreigners_percentage, type: float }
-            skip_rows: 7
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-02-t2.csv
-            sheet_name: T2
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_age_below_6, type: int }
-              - { name: inhabitants_age_6_15, type: int }
-              - { name: inhabitants_age_15_18, type: int }
-              - { name: inhabitants_age_18_27, type: int }
-              - { name: inhabitants_age_27_45, type: int }
-              - { name: inhabitants_age_45_55, type: int }
-              - { name: inhabitants_age_55_65, type: int }
-              - { name: inhabitants_age_above_65, type: int }
-              - { name: inhabitants_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-02-t3.csv
-            sheet_name: T3
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_with_migration_background_age_below_6, type: int }
-              - { name: inhabitants_with_migration_background_age_6_15, type: int }
-              - { name: inhabitants_with_migration_background_age_15_18, type: int }
-              - { name: inhabitants_with_migration_background_age_18_27, type: int }
-              - { name: inhabitants_with_migration_background_age_27_45, type: int }
-              - { name: inhabitants_with_migration_background_age_45_55, type: int }
-              - { name: inhabitants_with_migration_background_age_55_65, type: int }
-              - { name: inhabitants_with_migration_background_age_above_65, type: int }
-              - { name: inhabitants_with_migration_background_female, type: int }
-              - { name: inhabitants_foreigners, type: int }
-            skip_rows: 4
-            dropna: True
-          - target_file_name: berlin-lor-population-2024-02-t4.csv
-            sheet_name: T4
-            names:
-              - name: district_id
-              - name: forecast_area_id
-              - name: district_region_id
-              - name: planning_area_id
-              - { name: inhabitants, type: int }
-              - { name: inhabitants_from_european_union, type: int }
-              - { name: inhabitants_from_france, type: int }
-              - { name: inhabitants_from_greece, type: int }
-              - { name: inhabitants_from_italy, type: int }
-              - { name: inhabitants_from_austria, type: int }
-              - { name: inhabitants_from_spain, type: int }
-              - { name: inhabitants_from_poland, type: int }
-              - { name: inhabitants_from_bulgaria, type: int }
-              - { name: inhabitants_from_rumania, type: int }
-              - { name: inhabitants_from_croatia, type: int }
-              - { name: inhabitants_from_united_kingdom, type: int }
-              - { name: inhabitants_from_former_yugoslavia, type: int }
-              - { name: inhabitants_from_bosnia_herzegovina, type: int }
-              - { name: inhabitants_from_serbia, type: int }
-              - { name: inhabitants_from_former_soviet_union, type: int }
-              - { name: inhabitants_from_russia, type: int }
-              - { name: inhabitants_from_ukraine, type: int }
-              - { name: inhabitants_from_kazakhstan, type: int }
-              - { name: inhabitants_from_islamic_countries, type: int }
-              - { name: inhabitants_from_turkey, type: int }
-              - { name: inhabitants_from_iran, type: int }
-              - { name: inhabitants_from_arabic_countries, type: int }
-              - { name: inhabitants_from_lebanon, type: int }
-              - { name: inhabitants_from_syria, type: int }
-              - { name: inhabitants_from_vietnam, type: int }
-              - { name: inhabitants_from_united_states, type: int }
-              - { name: inhabitants_from_undefined, type: int }
-            skip_rows: 6
-            dropna: True
+          - { target_file_name: berlin-lor-population-2024-02-t1.csv, sheet_name: T1, names: *t1, skip_rows: 7, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-02-t2.csv, sheet_name: T2, names: *t2, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-02-t3.csv, sheet_name: T3, names: *t3, skip_rows: 4, dropna: True }
+          - { target_file_name: berlin-lor-population-2024-02-t4.csv, sheet_name: T4, names: *t4, skip_rows: 6, dropna: True }
