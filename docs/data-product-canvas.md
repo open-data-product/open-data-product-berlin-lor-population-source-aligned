@@ -7,7 +7,7 @@
 * description: Source-aligned data product providing Berlin LOR population data
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 ## Input Ports
 
@@ -236,889 +236,1209 @@
 * [Data extractor](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/extract/data_extractor.py) extracts data from inout ports
 * [Data copier](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_copier.py) copies and renames extracted data
 * [Data CSV converter](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_csv_converter.py) converts Excel files to CSV format
-* [Data CSV aggregator](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_csv_aggregator.py) aggregates data to be used as output ports
+* [Data aggregator](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_aggregator.py) aggregates data to be used as output ports
 
 ## Output Ports
 
-### Berlin Lor Population 2015 01
+### Berlin Lor Population 2015 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2015-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2015-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1.csv)
-* [berlin-lor-population-2015-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2.csv)
-* [berlin-lor-population-2015-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3.csv)
-* [berlin-lor-population-2015-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4.csv)
+* [berlin-lor-population-2015-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t1-city.csv)
+* [berlin-lor-population-2015-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t1-district-regions.csv)
+* [berlin-lor-population-2015-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t1-districts.csv)
+* [berlin-lor-population-2015-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2015-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t1-planning-areas.csv)
+* [berlin-lor-population-2015-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t2-city.csv)
+* [berlin-lor-population-2015-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t2-district-regions.csv)
+* [berlin-lor-population-2015-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t2-districts.csv)
+* [berlin-lor-population-2015-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2015-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t2-planning-areas.csv)
+* [berlin-lor-population-2015-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t3-city.csv)
+* [berlin-lor-population-2015-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t3-district-regions.csv)
+* [berlin-lor-population-2015-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t3-districts.csv)
+* [berlin-lor-population-2015-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2015-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t3-planning-areas.csv)
+* [berlin-lor-population-2015-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t4-city.csv)
+* [berlin-lor-population-2015-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t4-district-regions.csv)
+* [berlin-lor-population-2015-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t4-districts.csv)
+* [berlin-lor-population-2015-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2015-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-csv/berlin-lor-population-2015-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2015 02
+### Berlin Lor Population 2015 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2015-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2015-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1.csv)
-* [berlin-lor-population-2015-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2.csv)
-* [berlin-lor-population-2015-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3.csv)
-* [berlin-lor-population-2015-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4.csv)
+* [berlin-lor-population-2015-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t1-city.parquet)
+* [berlin-lor-population-2015-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t1-district-regions.parquet)
+* [berlin-lor-population-2015-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t1-districts.parquet)
+* [berlin-lor-population-2015-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2015-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2015-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t2-city.parquet)
+* [berlin-lor-population-2015-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t2-district-regions.parquet)
+* [berlin-lor-population-2015-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t2-districts.parquet)
+* [berlin-lor-population-2015-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2015-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2015-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t3-city.parquet)
+* [berlin-lor-population-2015-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t3-district-regions.parquet)
+* [berlin-lor-population-2015-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t3-districts.parquet)
+* [berlin-lor-population-2015-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2015-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2015-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t4-city.parquet)
+* [berlin-lor-population-2015-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t4-district-regions.parquet)
+* [berlin-lor-population-2015-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t4-districts.parquet)
+* [berlin-lor-population-2015-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2015-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01-parquet/berlin-lor-population-2015-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2016 01
+### Berlin Lor Population 2015 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2016-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2016-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1.csv)
-* [berlin-lor-population-2016-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2.csv)
-* [berlin-lor-population-2016-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3.csv)
-* [berlin-lor-population-2016-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4.csv)
+* [berlin-lor-population-2015-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t1-city.csv)
+* [berlin-lor-population-2015-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t1-district-regions.csv)
+* [berlin-lor-population-2015-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t1-districts.csv)
+* [berlin-lor-population-2015-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2015-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t1-planning-areas.csv)
+* [berlin-lor-population-2015-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t2-city.csv)
+* [berlin-lor-population-2015-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t2-district-regions.csv)
+* [berlin-lor-population-2015-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t2-districts.csv)
+* [berlin-lor-population-2015-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2015-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t2-planning-areas.csv)
+* [berlin-lor-population-2015-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t3-city.csv)
+* [berlin-lor-population-2015-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t3-district-regions.csv)
+* [berlin-lor-population-2015-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t3-districts.csv)
+* [berlin-lor-population-2015-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2015-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t3-planning-areas.csv)
+* [berlin-lor-population-2015-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t4-city.csv)
+* [berlin-lor-population-2015-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t4-district-regions.csv)
+* [berlin-lor-population-2015-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t4-districts.csv)
+* [berlin-lor-population-2015-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2015-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-csv/berlin-lor-population-2015-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2016 02
+### Berlin Lor Population 2015 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2016-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2016-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1.csv)
-* [berlin-lor-population-2016-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2.csv)
-* [berlin-lor-population-2016-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3.csv)
-* [berlin-lor-population-2016-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4.csv)
+* [berlin-lor-population-2015-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t1-city.parquet)
+* [berlin-lor-population-2015-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t1-district-regions.parquet)
+* [berlin-lor-population-2015-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t1-districts.parquet)
+* [berlin-lor-population-2015-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2015-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2015-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t2-city.parquet)
+* [berlin-lor-population-2015-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t2-district-regions.parquet)
+* [berlin-lor-population-2015-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t2-districts.parquet)
+* [berlin-lor-population-2015-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2015-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2015-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t3-city.parquet)
+* [berlin-lor-population-2015-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t3-district-regions.parquet)
+* [berlin-lor-population-2015-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t3-districts.parquet)
+* [berlin-lor-population-2015-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2015-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2015-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t4-city.parquet)
+* [berlin-lor-population-2015-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t4-district-regions.parquet)
+* [berlin-lor-population-2015-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t4-districts.parquet)
+* [berlin-lor-population-2015-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2015-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02-parquet/berlin-lor-population-2015-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2017 01
+### Berlin Lor Population 2016 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2017-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2017-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1.csv)
-* [berlin-lor-population-2017-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2.csv)
-* [berlin-lor-population-2017-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3.csv)
-* [berlin-lor-population-2017-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4.csv)
+* [berlin-lor-population-2016-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t1-city.csv)
+* [berlin-lor-population-2016-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t1-district-regions.csv)
+* [berlin-lor-population-2016-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t1-districts.csv)
+* [berlin-lor-population-2016-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2016-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t1-planning-areas.csv)
+* [berlin-lor-population-2016-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t2-city.csv)
+* [berlin-lor-population-2016-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t2-district-regions.csv)
+* [berlin-lor-population-2016-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t2-districts.csv)
+* [berlin-lor-population-2016-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2016-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t2-planning-areas.csv)
+* [berlin-lor-population-2016-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t3-city.csv)
+* [berlin-lor-population-2016-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t3-district-regions.csv)
+* [berlin-lor-population-2016-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t3-districts.csv)
+* [berlin-lor-population-2016-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2016-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t3-planning-areas.csv)
+* [berlin-lor-population-2016-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t4-city.csv)
+* [berlin-lor-population-2016-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t4-district-regions.csv)
+* [berlin-lor-population-2016-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t4-districts.csv)
+* [berlin-lor-population-2016-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2016-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-csv/berlin-lor-population-2016-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2017 02
+### Berlin Lor Population 2016 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2017-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2017-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1.csv)
-* [berlin-lor-population-2017-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2.csv)
-* [berlin-lor-population-2017-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3.csv)
-* [berlin-lor-population-2017-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4.csv)
+* [berlin-lor-population-2016-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t1-city.parquet)
+* [berlin-lor-population-2016-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t1-district-regions.parquet)
+* [berlin-lor-population-2016-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t1-districts.parquet)
+* [berlin-lor-population-2016-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2016-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2016-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t2-city.parquet)
+* [berlin-lor-population-2016-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t2-district-regions.parquet)
+* [berlin-lor-population-2016-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t2-districts.parquet)
+* [berlin-lor-population-2016-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2016-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2016-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t3-city.parquet)
+* [berlin-lor-population-2016-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t3-district-regions.parquet)
+* [berlin-lor-population-2016-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t3-districts.parquet)
+* [berlin-lor-population-2016-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2016-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2016-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t4-city.parquet)
+* [berlin-lor-population-2016-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t4-district-regions.parquet)
+* [berlin-lor-population-2016-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t4-districts.parquet)
+* [berlin-lor-population-2016-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2016-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01-parquet/berlin-lor-population-2016-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2018 01
+### Berlin Lor Population 2016 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2018-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2018-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1.csv)
-* [berlin-lor-population-2018-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2.csv)
-* [berlin-lor-population-2018-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3.csv)
-* [berlin-lor-population-2018-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4.csv)
+* [berlin-lor-population-2016-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t1-city.csv)
+* [berlin-lor-population-2016-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t1-district-regions.csv)
+* [berlin-lor-population-2016-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t1-districts.csv)
+* [berlin-lor-population-2016-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2016-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t1-planning-areas.csv)
+* [berlin-lor-population-2016-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t2-city.csv)
+* [berlin-lor-population-2016-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t2-district-regions.csv)
+* [berlin-lor-population-2016-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t2-districts.csv)
+* [berlin-lor-population-2016-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2016-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t2-planning-areas.csv)
+* [berlin-lor-population-2016-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t3-city.csv)
+* [berlin-lor-population-2016-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t3-district-regions.csv)
+* [berlin-lor-population-2016-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t3-districts.csv)
+* [berlin-lor-population-2016-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2016-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t3-planning-areas.csv)
+* [berlin-lor-population-2016-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t4-city.csv)
+* [berlin-lor-population-2016-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t4-district-regions.csv)
+* [berlin-lor-population-2016-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t4-districts.csv)
+* [berlin-lor-population-2016-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2016-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-csv/berlin-lor-population-2016-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2018 02
+### Berlin Lor Population 2016 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2018-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2018-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1.csv)
-* [berlin-lor-population-2018-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2.csv)
-* [berlin-lor-population-2018-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3.csv)
-* [berlin-lor-population-2018-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4.csv)
+* [berlin-lor-population-2016-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t1-city.parquet)
+* [berlin-lor-population-2016-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t1-district-regions.parquet)
+* [berlin-lor-population-2016-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t1-districts.parquet)
+* [berlin-lor-population-2016-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2016-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2016-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t2-city.parquet)
+* [berlin-lor-population-2016-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t2-district-regions.parquet)
+* [berlin-lor-population-2016-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t2-districts.parquet)
+* [berlin-lor-population-2016-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2016-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2016-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t3-city.parquet)
+* [berlin-lor-population-2016-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t3-district-regions.parquet)
+* [berlin-lor-population-2016-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t3-districts.parquet)
+* [berlin-lor-population-2016-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2016-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2016-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t4-city.parquet)
+* [berlin-lor-population-2016-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t4-district-regions.parquet)
+* [berlin-lor-population-2016-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t4-districts.parquet)
+* [berlin-lor-population-2016-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2016-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02-parquet/berlin-lor-population-2016-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2019 01
+### Berlin Lor Population 2017 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2019-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2019-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1.csv)
-* [berlin-lor-population-2019-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2.csv)
-* [berlin-lor-population-2019-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3.csv)
-* [berlin-lor-population-2019-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4.csv)
+* [berlin-lor-population-2017-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t1-city.csv)
+* [berlin-lor-population-2017-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t1-district-regions.csv)
+* [berlin-lor-population-2017-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t1-districts.csv)
+* [berlin-lor-population-2017-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2017-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t1-planning-areas.csv)
+* [berlin-lor-population-2017-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t2-city.csv)
+* [berlin-lor-population-2017-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t2-district-regions.csv)
+* [berlin-lor-population-2017-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t2-districts.csv)
+* [berlin-lor-population-2017-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2017-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t2-planning-areas.csv)
+* [berlin-lor-population-2017-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t3-city.csv)
+* [berlin-lor-population-2017-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t3-district-regions.csv)
+* [berlin-lor-population-2017-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t3-districts.csv)
+* [berlin-lor-population-2017-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2017-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t3-planning-areas.csv)
+* [berlin-lor-population-2017-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t4-city.csv)
+* [berlin-lor-population-2017-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t4-district-regions.csv)
+* [berlin-lor-population-2017-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t4-districts.csv)
+* [berlin-lor-population-2017-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2017-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-csv/berlin-lor-population-2017-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2019 02
+### Berlin Lor Population 2017 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2019-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2019-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1.csv)
-* [berlin-lor-population-2019-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2.csv)
-* [berlin-lor-population-2019-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3.csv)
-* [berlin-lor-population-2019-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4.csv)
+* [berlin-lor-population-2017-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t1-city.parquet)
+* [berlin-lor-population-2017-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t1-district-regions.parquet)
+* [berlin-lor-population-2017-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t1-districts.parquet)
+* [berlin-lor-population-2017-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2017-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2017-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t2-city.parquet)
+* [berlin-lor-population-2017-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t2-district-regions.parquet)
+* [berlin-lor-population-2017-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t2-districts.parquet)
+* [berlin-lor-population-2017-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2017-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2017-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t3-city.parquet)
+* [berlin-lor-population-2017-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t3-district-regions.parquet)
+* [berlin-lor-population-2017-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t3-districts.parquet)
+* [berlin-lor-population-2017-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2017-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2017-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t4-city.parquet)
+* [berlin-lor-population-2017-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t4-district-regions.parquet)
+* [berlin-lor-population-2017-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t4-districts.parquet)
+* [berlin-lor-population-2017-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2017-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01-parquet/berlin-lor-population-2017-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2020 01
+### Berlin Lor Population 2017 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2020-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2020-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1.csv)
-* [berlin-lor-population-2020-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2.csv)
-* [berlin-lor-population-2020-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3.csv)
-* [berlin-lor-population-2020-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4.csv)
+* [berlin-lor-population-2017-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t1-city.csv)
+* [berlin-lor-population-2017-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t1-district-regions.csv)
+* [berlin-lor-population-2017-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t1-districts.csv)
+* [berlin-lor-population-2017-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2017-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t1-planning-areas.csv)
+* [berlin-lor-population-2017-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t2-city.csv)
+* [berlin-lor-population-2017-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t2-district-regions.csv)
+* [berlin-lor-population-2017-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t2-districts.csv)
+* [berlin-lor-population-2017-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2017-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t2-planning-areas.csv)
+* [berlin-lor-population-2017-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t3-city.csv)
+* [berlin-lor-population-2017-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t3-district-regions.csv)
+* [berlin-lor-population-2017-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t3-districts.csv)
+* [berlin-lor-population-2017-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2017-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t3-planning-areas.csv)
+* [berlin-lor-population-2017-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t4-city.csv)
+* [berlin-lor-population-2017-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t4-district-regions.csv)
+* [berlin-lor-population-2017-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t4-districts.csv)
+* [berlin-lor-population-2017-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2017-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-csv/berlin-lor-population-2017-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2020 02
+### Berlin Lor Population 2017 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2020-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2020-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1.csv)
-* [berlin-lor-population-2020-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2.csv)
-* [berlin-lor-population-2020-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3.csv)
-* [berlin-lor-population-2020-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4.csv)
+* [berlin-lor-population-2017-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t1-city.parquet)
+* [berlin-lor-population-2017-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t1-district-regions.parquet)
+* [berlin-lor-population-2017-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t1-districts.parquet)
+* [berlin-lor-population-2017-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2017-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2017-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t2-city.parquet)
+* [berlin-lor-population-2017-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t2-district-regions.parquet)
+* [berlin-lor-population-2017-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t2-districts.parquet)
+* [berlin-lor-population-2017-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2017-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2017-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t3-city.parquet)
+* [berlin-lor-population-2017-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t3-district-regions.parquet)
+* [berlin-lor-population-2017-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t3-districts.parquet)
+* [berlin-lor-population-2017-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2017-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2017-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t4-city.parquet)
+* [berlin-lor-population-2017-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t4-district-regions.parquet)
+* [berlin-lor-population-2017-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t4-districts.parquet)
+* [berlin-lor-population-2017-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2017-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02-parquet/berlin-lor-population-2017-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2021 01
+### Berlin Lor Population 2018 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2021-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2021-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1.csv)
-* [berlin-lor-population-2021-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2.csv)
-* [berlin-lor-population-2021-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3.csv)
-* [berlin-lor-population-2021-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4.csv)
+* [berlin-lor-population-2018-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t1-city.csv)
+* [berlin-lor-population-2018-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t1-district-regions.csv)
+* [berlin-lor-population-2018-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t1-districts.csv)
+* [berlin-lor-population-2018-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2018-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t1-planning-areas.csv)
+* [berlin-lor-population-2018-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t2-city.csv)
+* [berlin-lor-population-2018-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t2-district-regions.csv)
+* [berlin-lor-population-2018-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t2-districts.csv)
+* [berlin-lor-population-2018-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2018-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t2-planning-areas.csv)
+* [berlin-lor-population-2018-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t3-city.csv)
+* [berlin-lor-population-2018-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t3-district-regions.csv)
+* [berlin-lor-population-2018-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t3-districts.csv)
+* [berlin-lor-population-2018-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2018-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t3-planning-areas.csv)
+* [berlin-lor-population-2018-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t4-city.csv)
+* [berlin-lor-population-2018-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t4-district-regions.csv)
+* [berlin-lor-population-2018-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t4-districts.csv)
+* [berlin-lor-population-2018-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2018-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-csv/berlin-lor-population-2018-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2021 02
+### Berlin Lor Population 2018 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2021-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2021-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1.csv)
-* [berlin-lor-population-2021-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2.csv)
-* [berlin-lor-population-2021-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3.csv)
-* [berlin-lor-population-2021-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4.csv)
+* [berlin-lor-population-2018-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t1-city.parquet)
+* [berlin-lor-population-2018-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t1-district-regions.parquet)
+* [berlin-lor-population-2018-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t1-districts.parquet)
+* [berlin-lor-population-2018-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2018-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2018-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t2-city.parquet)
+* [berlin-lor-population-2018-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t2-district-regions.parquet)
+* [berlin-lor-population-2018-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t2-districts.parquet)
+* [berlin-lor-population-2018-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2018-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2018-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t3-city.parquet)
+* [berlin-lor-population-2018-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t3-district-regions.parquet)
+* [berlin-lor-population-2018-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t3-districts.parquet)
+* [berlin-lor-population-2018-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2018-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2018-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t4-city.parquet)
+* [berlin-lor-population-2018-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t4-district-regions.parquet)
+* [berlin-lor-population-2018-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t4-districts.parquet)
+* [berlin-lor-population-2018-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2018-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01-parquet/berlin-lor-population-2018-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2022 01
+### Berlin Lor Population 2018 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2022-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2022-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1.csv)
-* [berlin-lor-population-2022-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2.csv)
-* [berlin-lor-population-2022-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3.csv)
-* [berlin-lor-population-2022-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4.csv)
+* [berlin-lor-population-2018-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t1-city.csv)
+* [berlin-lor-population-2018-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t1-district-regions.csv)
+* [berlin-lor-population-2018-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t1-districts.csv)
+* [berlin-lor-population-2018-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2018-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t1-planning-areas.csv)
+* [berlin-lor-population-2018-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t2-city.csv)
+* [berlin-lor-population-2018-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t2-district-regions.csv)
+* [berlin-lor-population-2018-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t2-districts.csv)
+* [berlin-lor-population-2018-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2018-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t2-planning-areas.csv)
+* [berlin-lor-population-2018-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t3-city.csv)
+* [berlin-lor-population-2018-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t3-district-regions.csv)
+* [berlin-lor-population-2018-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t3-districts.csv)
+* [berlin-lor-population-2018-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2018-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t3-planning-areas.csv)
+* [berlin-lor-population-2018-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t4-city.csv)
+* [berlin-lor-population-2018-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t4-district-regions.csv)
+* [berlin-lor-population-2018-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t4-districts.csv)
+* [berlin-lor-population-2018-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2018-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-csv/berlin-lor-population-2018-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2022 02
+### Berlin Lor Population 2018 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2022-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2022-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1.csv)
-* [berlin-lor-population-2022-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2.csv)
-* [berlin-lor-population-2022-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3.csv)
-* [berlin-lor-population-2022-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4.csv)
+* [berlin-lor-population-2018-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t1-city.parquet)
+* [berlin-lor-population-2018-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t1-district-regions.parquet)
+* [berlin-lor-population-2018-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t1-districts.parquet)
+* [berlin-lor-population-2018-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2018-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2018-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t2-city.parquet)
+* [berlin-lor-population-2018-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t2-district-regions.parquet)
+* [berlin-lor-population-2018-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t2-districts.parquet)
+* [berlin-lor-population-2018-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2018-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2018-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t3-city.parquet)
+* [berlin-lor-population-2018-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t3-district-regions.parquet)
+* [berlin-lor-population-2018-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t3-districts.parquet)
+* [berlin-lor-population-2018-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2018-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2018-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t4-city.parquet)
+* [berlin-lor-population-2018-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t4-district-regions.parquet)
+* [berlin-lor-population-2018-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t4-districts.parquet)
+* [berlin-lor-population-2018-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2018-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02-parquet/berlin-lor-population-2018-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2023 01
+### Berlin Lor Population 2019 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2023-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2023-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1.csv)
-* [berlin-lor-population-2023-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2.csv)
-* [berlin-lor-population-2023-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3.csv)
-* [berlin-lor-population-2023-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4.csv)
+* [berlin-lor-population-2019-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t1-city.csv)
+* [berlin-lor-population-2019-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t1-district-regions.csv)
+* [berlin-lor-population-2019-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t1-districts.csv)
+* [berlin-lor-population-2019-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2019-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t1-planning-areas.csv)
+* [berlin-lor-population-2019-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t2-city.csv)
+* [berlin-lor-population-2019-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t2-district-regions.csv)
+* [berlin-lor-population-2019-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t2-districts.csv)
+* [berlin-lor-population-2019-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2019-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t2-planning-areas.csv)
+* [berlin-lor-population-2019-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t3-city.csv)
+* [berlin-lor-population-2019-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t3-district-regions.csv)
+* [berlin-lor-population-2019-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t3-districts.csv)
+* [berlin-lor-population-2019-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2019-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t3-planning-areas.csv)
+* [berlin-lor-population-2019-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t4-city.csv)
+* [berlin-lor-population-2019-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t4-district-regions.csv)
+* [berlin-lor-population-2019-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t4-districts.csv)
+* [berlin-lor-population-2019-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2019-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-csv/berlin-lor-population-2019-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2023 02
+### Berlin Lor Population 2019 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2023-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2023-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1.csv)
-* [berlin-lor-population-2023-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2.csv)
-* [berlin-lor-population-2023-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3.csv)
-* [berlin-lor-population-2023-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4.csv)
+* [berlin-lor-population-2019-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t1-city.parquet)
+* [berlin-lor-population-2019-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t1-district-regions.parquet)
+* [berlin-lor-population-2019-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t1-districts.parquet)
+* [berlin-lor-population-2019-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2019-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2019-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t2-city.parquet)
+* [berlin-lor-population-2019-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t2-district-regions.parquet)
+* [berlin-lor-population-2019-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t2-districts.parquet)
+* [berlin-lor-population-2019-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2019-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2019-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t3-city.parquet)
+* [berlin-lor-population-2019-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t3-district-regions.parquet)
+* [berlin-lor-population-2019-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t3-districts.parquet)
+* [berlin-lor-population-2019-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2019-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2019-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t4-city.parquet)
+* [berlin-lor-population-2019-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t4-district-regions.parquet)
+* [berlin-lor-population-2019-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t4-districts.parquet)
+* [berlin-lor-population-2019-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2019-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01-parquet/berlin-lor-population-2019-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2024 01
+### Berlin Lor Population 2019 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2024-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2024-01-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1.csv)
-* [berlin-lor-population-2024-01-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2.csv)
-* [berlin-lor-population-2024-01-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3.csv)
-* [berlin-lor-population-2024-01-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4.csv)
+* [berlin-lor-population-2019-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t1-city.csv)
+* [berlin-lor-population-2019-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t1-district-regions.csv)
+* [berlin-lor-population-2019-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t1-districts.csv)
+* [berlin-lor-population-2019-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2019-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t1-planning-areas.csv)
+* [berlin-lor-population-2019-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t2-city.csv)
+* [berlin-lor-population-2019-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t2-district-regions.csv)
+* [berlin-lor-population-2019-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t2-districts.csv)
+* [berlin-lor-population-2019-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2019-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t2-planning-areas.csv)
+* [berlin-lor-population-2019-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t3-city.csv)
+* [berlin-lor-population-2019-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t3-district-regions.csv)
+* [berlin-lor-population-2019-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t3-districts.csv)
+* [berlin-lor-population-2019-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2019-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t3-planning-areas.csv)
+* [berlin-lor-population-2019-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t4-city.csv)
+* [berlin-lor-population-2019-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t4-district-regions.csv)
+* [berlin-lor-population-2019-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t4-districts.csv)
+* [berlin-lor-population-2019-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2019-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-csv/berlin-lor-population-2019-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2024 02
+### Berlin Lor Population 2019 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/02-silver/berlin-lor-population-2024-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2024-02-t1.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1.csv)
-* [berlin-lor-population-2024-02-t2.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2.csv)
-* [berlin-lor-population-2024-02-t3.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3.csv)
-* [berlin-lor-population-2024-02-t4.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/02-silver/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4.csv)
+* [berlin-lor-population-2019-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t1-city.parquet)
+* [berlin-lor-population-2019-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t1-district-regions.parquet)
+* [berlin-lor-population-2019-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t1-districts.parquet)
+* [berlin-lor-population-2019-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2019-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2019-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t2-city.parquet)
+* [berlin-lor-population-2019-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t2-district-regions.parquet)
+* [berlin-lor-population-2019-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t2-districts.parquet)
+* [berlin-lor-population-2019-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2019-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2019-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t3-city.parquet)
+* [berlin-lor-population-2019-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t3-district-regions.parquet)
+* [berlin-lor-population-2019-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t3-districts.parquet)
+* [berlin-lor-population-2019-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2019-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2019-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t4-city.parquet)
+* [berlin-lor-population-2019-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t4-district-regions.parquet)
+* [berlin-lor-population-2019-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t4-districts.parquet)
+* [berlin-lor-population-2019-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2019-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02-parquet/berlin-lor-population-2019-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2015 01
+### Berlin Lor Population 2020 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2015-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-city.csv)
-* [berlin-lor-population-2015-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-district-regions.csv)
-* [berlin-lor-population-2015-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-districts.csv)
-* [berlin-lor-population-2015-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2015-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t1-planning-areas.csv)
-* [berlin-lor-population-2015-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2-city.csv)
-* [berlin-lor-population-2015-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2-district-regions.csv)
-* [berlin-lor-population-2015-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2-districts.csv)
-* [berlin-lor-population-2015-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2015-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t2-planning-areas.csv)
-* [berlin-lor-population-2015-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3-city.csv)
-* [berlin-lor-population-2015-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3-district-regions.csv)
-* [berlin-lor-population-2015-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3-districts.csv)
-* [berlin-lor-population-2015-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2015-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t3-planning-areas.csv)
-* [berlin-lor-population-2015-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4-city.csv)
-* [berlin-lor-population-2015-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4-district-regions.csv)
-* [berlin-lor-population-2015-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4-districts.csv)
-* [berlin-lor-population-2015-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2015-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-01/berlin-lor-population-2015-01-t4-planning-areas.csv)
+* [berlin-lor-population-2020-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t1-city.csv)
+* [berlin-lor-population-2020-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t1-district-regions.csv)
+* [berlin-lor-population-2020-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t1-districts.csv)
+* [berlin-lor-population-2020-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2020-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t1-planning-areas.csv)
+* [berlin-lor-population-2020-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t2-city.csv)
+* [berlin-lor-population-2020-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t2-district-regions.csv)
+* [berlin-lor-population-2020-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t2-districts.csv)
+* [berlin-lor-population-2020-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2020-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t2-planning-areas.csv)
+* [berlin-lor-population-2020-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t3-city.csv)
+* [berlin-lor-population-2020-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t3-district-regions.csv)
+* [berlin-lor-population-2020-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t3-districts.csv)
+* [berlin-lor-population-2020-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2020-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t3-planning-areas.csv)
+* [berlin-lor-population-2020-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t4-city.csv)
+* [berlin-lor-population-2020-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t4-district-regions.csv)
+* [berlin-lor-population-2020-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t4-districts.csv)
+* [berlin-lor-population-2020-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2020-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-csv/berlin-lor-population-2020-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2015 02
+### Berlin Lor Population 2020 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2015-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2015-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-city.csv)
-* [berlin-lor-population-2015-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-district-regions.csv)
-* [berlin-lor-population-2015-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-districts.csv)
-* [berlin-lor-population-2015-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2015-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t1-planning-areas.csv)
-* [berlin-lor-population-2015-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2-city.csv)
-* [berlin-lor-population-2015-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2-district-regions.csv)
-* [berlin-lor-population-2015-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2-districts.csv)
-* [berlin-lor-population-2015-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2015-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t2-planning-areas.csv)
-* [berlin-lor-population-2015-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3-city.csv)
-* [berlin-lor-population-2015-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3-district-regions.csv)
-* [berlin-lor-population-2015-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3-districts.csv)
-* [berlin-lor-population-2015-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2015-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t3-planning-areas.csv)
-* [berlin-lor-population-2015-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4-city.csv)
-* [berlin-lor-population-2015-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4-district-regions.csv)
-* [berlin-lor-population-2015-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4-districts.csv)
-* [berlin-lor-population-2015-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2015-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2015-02/berlin-lor-population-2015-02-t4-planning-areas.csv)
+* [berlin-lor-population-2020-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t1-city.parquet)
+* [berlin-lor-population-2020-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t1-district-regions.parquet)
+* [berlin-lor-population-2020-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t1-districts.parquet)
+* [berlin-lor-population-2020-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2020-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2020-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t2-city.parquet)
+* [berlin-lor-population-2020-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t2-district-regions.parquet)
+* [berlin-lor-population-2020-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t2-districts.parquet)
+* [berlin-lor-population-2020-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2020-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2020-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t3-city.parquet)
+* [berlin-lor-population-2020-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t3-district-regions.parquet)
+* [berlin-lor-population-2020-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t3-districts.parquet)
+* [berlin-lor-population-2020-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2020-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2020-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t4-city.parquet)
+* [berlin-lor-population-2020-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t4-district-regions.parquet)
+* [berlin-lor-population-2020-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t4-districts.parquet)
+* [berlin-lor-population-2020-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2020-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01-parquet/berlin-lor-population-2020-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2016 01
+### Berlin Lor Population 2020 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2016-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-city.csv)
-* [berlin-lor-population-2016-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-district-regions.csv)
-* [berlin-lor-population-2016-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-districts.csv)
-* [berlin-lor-population-2016-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2016-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t1-planning-areas.csv)
-* [berlin-lor-population-2016-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2-city.csv)
-* [berlin-lor-population-2016-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2-district-regions.csv)
-* [berlin-lor-population-2016-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2-districts.csv)
-* [berlin-lor-population-2016-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2016-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t2-planning-areas.csv)
-* [berlin-lor-population-2016-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3-city.csv)
-* [berlin-lor-population-2016-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3-district-regions.csv)
-* [berlin-lor-population-2016-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3-districts.csv)
-* [berlin-lor-population-2016-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2016-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t3-planning-areas.csv)
-* [berlin-lor-population-2016-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4-city.csv)
-* [berlin-lor-population-2016-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4-district-regions.csv)
-* [berlin-lor-population-2016-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4-districts.csv)
-* [berlin-lor-population-2016-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2016-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-01/berlin-lor-population-2016-01-t4-planning-areas.csv)
+* [berlin-lor-population-2020-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t1-city.csv)
+* [berlin-lor-population-2020-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t1-district-regions.csv)
+* [berlin-lor-population-2020-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t1-districts.csv)
+* [berlin-lor-population-2020-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2020-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t1-planning-areas.csv)
+* [berlin-lor-population-2020-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t2-city.csv)
+* [berlin-lor-population-2020-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t2-district-regions.csv)
+* [berlin-lor-population-2020-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t2-districts.csv)
+* [berlin-lor-population-2020-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2020-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t2-planning-areas.csv)
+* [berlin-lor-population-2020-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t3-city.csv)
+* [berlin-lor-population-2020-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t3-district-regions.csv)
+* [berlin-lor-population-2020-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t3-districts.csv)
+* [berlin-lor-population-2020-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2020-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t3-planning-areas.csv)
+* [berlin-lor-population-2020-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t4-city.csv)
+* [berlin-lor-population-2020-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t4-district-regions.csv)
+* [berlin-lor-population-2020-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t4-districts.csv)
+* [berlin-lor-population-2020-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2020-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-csv/berlin-lor-population-2020-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2016 02
+### Berlin Lor Population 2020 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2016-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2016-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-city.csv)
-* [berlin-lor-population-2016-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-district-regions.csv)
-* [berlin-lor-population-2016-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-districts.csv)
-* [berlin-lor-population-2016-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2016-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t1-planning-areas.csv)
-* [berlin-lor-population-2016-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2-city.csv)
-* [berlin-lor-population-2016-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2-district-regions.csv)
-* [berlin-lor-population-2016-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2-districts.csv)
-* [berlin-lor-population-2016-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2016-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t2-planning-areas.csv)
-* [berlin-lor-population-2016-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3-city.csv)
-* [berlin-lor-population-2016-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3-district-regions.csv)
-* [berlin-lor-population-2016-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3-districts.csv)
-* [berlin-lor-population-2016-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2016-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t3-planning-areas.csv)
-* [berlin-lor-population-2016-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4-city.csv)
-* [berlin-lor-population-2016-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4-district-regions.csv)
-* [berlin-lor-population-2016-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4-districts.csv)
-* [berlin-lor-population-2016-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2016-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2016-02/berlin-lor-population-2016-02-t4-planning-areas.csv)
+* [berlin-lor-population-2020-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t1-city.parquet)
+* [berlin-lor-population-2020-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t1-district-regions.parquet)
+* [berlin-lor-population-2020-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t1-districts.parquet)
+* [berlin-lor-population-2020-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2020-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2020-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t2-city.parquet)
+* [berlin-lor-population-2020-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t2-district-regions.parquet)
+* [berlin-lor-population-2020-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t2-districts.parquet)
+* [berlin-lor-population-2020-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2020-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2020-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t3-city.parquet)
+* [berlin-lor-population-2020-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t3-district-regions.parquet)
+* [berlin-lor-population-2020-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t3-districts.parquet)
+* [berlin-lor-population-2020-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2020-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2020-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t4-city.parquet)
+* [berlin-lor-population-2020-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t4-district-regions.parquet)
+* [berlin-lor-population-2020-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t4-districts.parquet)
+* [berlin-lor-population-2020-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2020-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02-parquet/berlin-lor-population-2020-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2017 01
+### Berlin Lor Population 2021 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2017-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-city.csv)
-* [berlin-lor-population-2017-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-district-regions.csv)
-* [berlin-lor-population-2017-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-districts.csv)
-* [berlin-lor-population-2017-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2017-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t1-planning-areas.csv)
-* [berlin-lor-population-2017-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2-city.csv)
-* [berlin-lor-population-2017-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2-district-regions.csv)
-* [berlin-lor-population-2017-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2-districts.csv)
-* [berlin-lor-population-2017-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2017-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t2-planning-areas.csv)
-* [berlin-lor-population-2017-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3-city.csv)
-* [berlin-lor-population-2017-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3-district-regions.csv)
-* [berlin-lor-population-2017-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3-districts.csv)
-* [berlin-lor-population-2017-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2017-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t3-planning-areas.csv)
-* [berlin-lor-population-2017-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4-city.csv)
-* [berlin-lor-population-2017-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4-district-regions.csv)
-* [berlin-lor-population-2017-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4-districts.csv)
-* [berlin-lor-population-2017-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2017-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-01/berlin-lor-population-2017-01-t4-planning-areas.csv)
+* [berlin-lor-population-2021-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t1-city.csv)
+* [berlin-lor-population-2021-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t1-district-regions.csv)
+* [berlin-lor-population-2021-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t1-districts.csv)
+* [berlin-lor-population-2021-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2021-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t1-planning-areas.csv)
+* [berlin-lor-population-2021-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t2-city.csv)
+* [berlin-lor-population-2021-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t2-district-regions.csv)
+* [berlin-lor-population-2021-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t2-districts.csv)
+* [berlin-lor-population-2021-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2021-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t2-planning-areas.csv)
+* [berlin-lor-population-2021-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t3-city.csv)
+* [berlin-lor-population-2021-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t3-district-regions.csv)
+* [berlin-lor-population-2021-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t3-districts.csv)
+* [berlin-lor-population-2021-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2021-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t3-planning-areas.csv)
+* [berlin-lor-population-2021-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t4-city.csv)
+* [berlin-lor-population-2021-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t4-district-regions.csv)
+* [berlin-lor-population-2021-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t4-districts.csv)
+* [berlin-lor-population-2021-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2021-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-csv/berlin-lor-population-2021-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2017 02
+### Berlin Lor Population 2021 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2017-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2017-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-city.csv)
-* [berlin-lor-population-2017-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-district-regions.csv)
-* [berlin-lor-population-2017-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-districts.csv)
-* [berlin-lor-population-2017-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2017-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t1-planning-areas.csv)
-* [berlin-lor-population-2017-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2-city.csv)
-* [berlin-lor-population-2017-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2-district-regions.csv)
-* [berlin-lor-population-2017-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2-districts.csv)
-* [berlin-lor-population-2017-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2017-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t2-planning-areas.csv)
-* [berlin-lor-population-2017-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3-city.csv)
-* [berlin-lor-population-2017-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3-district-regions.csv)
-* [berlin-lor-population-2017-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3-districts.csv)
-* [berlin-lor-population-2017-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2017-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t3-planning-areas.csv)
-* [berlin-lor-population-2017-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4-city.csv)
-* [berlin-lor-population-2017-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4-district-regions.csv)
-* [berlin-lor-population-2017-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4-districts.csv)
-* [berlin-lor-population-2017-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2017-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2017-02/berlin-lor-population-2017-02-t4-planning-areas.csv)
+* [berlin-lor-population-2021-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t1-city.parquet)
+* [berlin-lor-population-2021-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t1-district-regions.parquet)
+* [berlin-lor-population-2021-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t1-districts.parquet)
+* [berlin-lor-population-2021-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2021-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2021-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t2-city.parquet)
+* [berlin-lor-population-2021-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t2-district-regions.parquet)
+* [berlin-lor-population-2021-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t2-districts.parquet)
+* [berlin-lor-population-2021-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2021-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2021-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t3-city.parquet)
+* [berlin-lor-population-2021-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t3-district-regions.parquet)
+* [berlin-lor-population-2021-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t3-districts.parquet)
+* [berlin-lor-population-2021-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2021-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2021-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t4-city.parquet)
+* [berlin-lor-population-2021-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t4-district-regions.parquet)
+* [berlin-lor-population-2021-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t4-districts.parquet)
+* [berlin-lor-population-2021-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2021-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01-parquet/berlin-lor-population-2021-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2018 01
+### Berlin Lor Population 2021 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2018-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-city.csv)
-* [berlin-lor-population-2018-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-district-regions.csv)
-* [berlin-lor-population-2018-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-districts.csv)
-* [berlin-lor-population-2018-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2018-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t1-planning-areas.csv)
-* [berlin-lor-population-2018-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2-city.csv)
-* [berlin-lor-population-2018-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2-district-regions.csv)
-* [berlin-lor-population-2018-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2-districts.csv)
-* [berlin-lor-population-2018-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2018-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t2-planning-areas.csv)
-* [berlin-lor-population-2018-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3-city.csv)
-* [berlin-lor-population-2018-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3-district-regions.csv)
-* [berlin-lor-population-2018-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3-districts.csv)
-* [berlin-lor-population-2018-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2018-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t3-planning-areas.csv)
-* [berlin-lor-population-2018-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4-city.csv)
-* [berlin-lor-population-2018-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4-district-regions.csv)
-* [berlin-lor-population-2018-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4-districts.csv)
-* [berlin-lor-population-2018-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2018-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-01/berlin-lor-population-2018-01-t4-planning-areas.csv)
+* [berlin-lor-population-2021-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t1-city.csv)
+* [berlin-lor-population-2021-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t1-district-regions.csv)
+* [berlin-lor-population-2021-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t1-districts.csv)
+* [berlin-lor-population-2021-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2021-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t1-planning-areas.csv)
+* [berlin-lor-population-2021-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t2-city.csv)
+* [berlin-lor-population-2021-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t2-district-regions.csv)
+* [berlin-lor-population-2021-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t2-districts.csv)
+* [berlin-lor-population-2021-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2021-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t2-planning-areas.csv)
+* [berlin-lor-population-2021-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t3-city.csv)
+* [berlin-lor-population-2021-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t3-district-regions.csv)
+* [berlin-lor-population-2021-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t3-districts.csv)
+* [berlin-lor-population-2021-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2021-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t3-planning-areas.csv)
+* [berlin-lor-population-2021-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t4-city.csv)
+* [berlin-lor-population-2021-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t4-district-regions.csv)
+* [berlin-lor-population-2021-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t4-districts.csv)
+* [berlin-lor-population-2021-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2021-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-csv/berlin-lor-population-2021-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2018 02
+### Berlin Lor Population 2021 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2018-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2018-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-city.csv)
-* [berlin-lor-population-2018-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-district-regions.csv)
-* [berlin-lor-population-2018-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-districts.csv)
-* [berlin-lor-population-2018-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2018-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t1-planning-areas.csv)
-* [berlin-lor-population-2018-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2-city.csv)
-* [berlin-lor-population-2018-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2-district-regions.csv)
-* [berlin-lor-population-2018-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2-districts.csv)
-* [berlin-lor-population-2018-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2018-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t2-planning-areas.csv)
-* [berlin-lor-population-2018-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3-city.csv)
-* [berlin-lor-population-2018-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3-district-regions.csv)
-* [berlin-lor-population-2018-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3-districts.csv)
-* [berlin-lor-population-2018-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2018-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t3-planning-areas.csv)
-* [berlin-lor-population-2018-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4-city.csv)
-* [berlin-lor-population-2018-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4-district-regions.csv)
-* [berlin-lor-population-2018-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4-districts.csv)
-* [berlin-lor-population-2018-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2018-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2018-02/berlin-lor-population-2018-02-t4-planning-areas.csv)
+* [berlin-lor-population-2021-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t1-city.parquet)
+* [berlin-lor-population-2021-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t1-district-regions.parquet)
+* [berlin-lor-population-2021-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t1-districts.parquet)
+* [berlin-lor-population-2021-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2021-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2021-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t2-city.parquet)
+* [berlin-lor-population-2021-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t2-district-regions.parquet)
+* [berlin-lor-population-2021-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t2-districts.parquet)
+* [berlin-lor-population-2021-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2021-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2021-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t3-city.parquet)
+* [berlin-lor-population-2021-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t3-district-regions.parquet)
+* [berlin-lor-population-2021-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t3-districts.parquet)
+* [berlin-lor-population-2021-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2021-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2021-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t4-city.parquet)
+* [berlin-lor-population-2021-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t4-district-regions.parquet)
+* [berlin-lor-population-2021-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t4-districts.parquet)
+* [berlin-lor-population-2021-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2021-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02-parquet/berlin-lor-population-2021-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2019 01
+### Berlin Lor Population 2022 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2019-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-city.csv)
-* [berlin-lor-population-2019-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-district-regions.csv)
-* [berlin-lor-population-2019-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-districts.csv)
-* [berlin-lor-population-2019-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2019-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t1-planning-areas.csv)
-* [berlin-lor-population-2019-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2-city.csv)
-* [berlin-lor-population-2019-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2-district-regions.csv)
-* [berlin-lor-population-2019-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2-districts.csv)
-* [berlin-lor-population-2019-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2019-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t2-planning-areas.csv)
-* [berlin-lor-population-2019-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3-city.csv)
-* [berlin-lor-population-2019-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3-district-regions.csv)
-* [berlin-lor-population-2019-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3-districts.csv)
-* [berlin-lor-population-2019-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2019-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t3-planning-areas.csv)
-* [berlin-lor-population-2019-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4-city.csv)
-* [berlin-lor-population-2019-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4-district-regions.csv)
-* [berlin-lor-population-2019-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4-districts.csv)
-* [berlin-lor-population-2019-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2019-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-01/berlin-lor-population-2019-01-t4-planning-areas.csv)
+* [berlin-lor-population-2022-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t1-city.csv)
+* [berlin-lor-population-2022-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t1-district-regions.csv)
+* [berlin-lor-population-2022-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t1-districts.csv)
+* [berlin-lor-population-2022-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2022-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t1-planning-areas.csv)
+* [berlin-lor-population-2022-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t2-city.csv)
+* [berlin-lor-population-2022-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t2-district-regions.csv)
+* [berlin-lor-population-2022-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t2-districts.csv)
+* [berlin-lor-population-2022-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2022-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t2-planning-areas.csv)
+* [berlin-lor-population-2022-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t3-city.csv)
+* [berlin-lor-population-2022-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t3-district-regions.csv)
+* [berlin-lor-population-2022-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t3-districts.csv)
+* [berlin-lor-population-2022-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2022-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t3-planning-areas.csv)
+* [berlin-lor-population-2022-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t4-city.csv)
+* [berlin-lor-population-2022-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t4-district-regions.csv)
+* [berlin-lor-population-2022-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t4-districts.csv)
+* [berlin-lor-population-2022-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2022-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-csv/berlin-lor-population-2022-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2019 02
+### Berlin Lor Population 2022 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2019-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2019-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-city.csv)
-* [berlin-lor-population-2019-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-district-regions.csv)
-* [berlin-lor-population-2019-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-districts.csv)
-* [berlin-lor-population-2019-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2019-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t1-planning-areas.csv)
-* [berlin-lor-population-2019-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2-city.csv)
-* [berlin-lor-population-2019-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2-district-regions.csv)
-* [berlin-lor-population-2019-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2-districts.csv)
-* [berlin-lor-population-2019-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2019-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t2-planning-areas.csv)
-* [berlin-lor-population-2019-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3-city.csv)
-* [berlin-lor-population-2019-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3-district-regions.csv)
-* [berlin-lor-population-2019-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3-districts.csv)
-* [berlin-lor-population-2019-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2019-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t3-planning-areas.csv)
-* [berlin-lor-population-2019-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4-city.csv)
-* [berlin-lor-population-2019-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4-district-regions.csv)
-* [berlin-lor-population-2019-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4-districts.csv)
-* [berlin-lor-population-2019-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2019-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2019-02/berlin-lor-population-2019-02-t4-planning-areas.csv)
+* [berlin-lor-population-2022-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t1-city.parquet)
+* [berlin-lor-population-2022-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t1-district-regions.parquet)
+* [berlin-lor-population-2022-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t1-districts.parquet)
+* [berlin-lor-population-2022-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2022-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2022-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t2-city.parquet)
+* [berlin-lor-population-2022-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t2-district-regions.parquet)
+* [berlin-lor-population-2022-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t2-districts.parquet)
+* [berlin-lor-population-2022-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2022-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2022-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t3-city.parquet)
+* [berlin-lor-population-2022-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t3-district-regions.parquet)
+* [berlin-lor-population-2022-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t3-districts.parquet)
+* [berlin-lor-population-2022-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2022-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2022-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t4-city.parquet)
+* [berlin-lor-population-2022-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t4-district-regions.parquet)
+* [berlin-lor-population-2022-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t4-districts.parquet)
+* [berlin-lor-population-2022-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2022-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01-parquet/berlin-lor-population-2022-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2020 01
+### Berlin Lor Population 2022 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2020-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-city.csv)
-* [berlin-lor-population-2020-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-district-regions.csv)
-* [berlin-lor-population-2020-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-districts.csv)
-* [berlin-lor-population-2020-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2020-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t1-planning-areas.csv)
-* [berlin-lor-population-2020-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2-city.csv)
-* [berlin-lor-population-2020-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2-district-regions.csv)
-* [berlin-lor-population-2020-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2-districts.csv)
-* [berlin-lor-population-2020-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2020-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t2-planning-areas.csv)
-* [berlin-lor-population-2020-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3-city.csv)
-* [berlin-lor-population-2020-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3-district-regions.csv)
-* [berlin-lor-population-2020-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3-districts.csv)
-* [berlin-lor-population-2020-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2020-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t3-planning-areas.csv)
-* [berlin-lor-population-2020-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4-city.csv)
-* [berlin-lor-population-2020-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4-district-regions.csv)
-* [berlin-lor-population-2020-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4-districts.csv)
-* [berlin-lor-population-2020-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2020-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-01/berlin-lor-population-2020-01-t4-planning-areas.csv)
+* [berlin-lor-population-2022-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t1-city.csv)
+* [berlin-lor-population-2022-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t1-district-regions.csv)
+* [berlin-lor-population-2022-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t1-districts.csv)
+* [berlin-lor-population-2022-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2022-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t1-planning-areas.csv)
+* [berlin-lor-population-2022-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t2-city.csv)
+* [berlin-lor-population-2022-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t2-district-regions.csv)
+* [berlin-lor-population-2022-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t2-districts.csv)
+* [berlin-lor-population-2022-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2022-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t2-planning-areas.csv)
+* [berlin-lor-population-2022-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t3-city.csv)
+* [berlin-lor-population-2022-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t3-district-regions.csv)
+* [berlin-lor-population-2022-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t3-districts.csv)
+* [berlin-lor-population-2022-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2022-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t3-planning-areas.csv)
+* [berlin-lor-population-2022-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t4-city.csv)
+* [berlin-lor-population-2022-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t4-district-regions.csv)
+* [berlin-lor-population-2022-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t4-districts.csv)
+* [berlin-lor-population-2022-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2022-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-csv/berlin-lor-population-2022-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2020 02
+### Berlin Lor Population 2022 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2020-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2020-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-city.csv)
-* [berlin-lor-population-2020-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-district-regions.csv)
-* [berlin-lor-population-2020-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-districts.csv)
-* [berlin-lor-population-2020-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2020-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t1-planning-areas.csv)
-* [berlin-lor-population-2020-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2-city.csv)
-* [berlin-lor-population-2020-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2-district-regions.csv)
-* [berlin-lor-population-2020-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2-districts.csv)
-* [berlin-lor-population-2020-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2020-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t2-planning-areas.csv)
-* [berlin-lor-population-2020-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3-city.csv)
-* [berlin-lor-population-2020-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3-district-regions.csv)
-* [berlin-lor-population-2020-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3-districts.csv)
-* [berlin-lor-population-2020-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2020-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t3-planning-areas.csv)
-* [berlin-lor-population-2020-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4-city.csv)
-* [berlin-lor-population-2020-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4-district-regions.csv)
-* [berlin-lor-population-2020-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4-districts.csv)
-* [berlin-lor-population-2020-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2020-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2020-02/berlin-lor-population-2020-02-t4-planning-areas.csv)
+* [berlin-lor-population-2022-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t1-city.parquet)
+* [berlin-lor-population-2022-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t1-district-regions.parquet)
+* [berlin-lor-population-2022-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t1-districts.parquet)
+* [berlin-lor-population-2022-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2022-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2022-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t2-city.parquet)
+* [berlin-lor-population-2022-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t2-district-regions.parquet)
+* [berlin-lor-population-2022-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t2-districts.parquet)
+* [berlin-lor-population-2022-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2022-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2022-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t3-city.parquet)
+* [berlin-lor-population-2022-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t3-district-regions.parquet)
+* [berlin-lor-population-2022-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t3-districts.parquet)
+* [berlin-lor-population-2022-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2022-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2022-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t4-city.parquet)
+* [berlin-lor-population-2022-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t4-district-regions.parquet)
+* [berlin-lor-population-2022-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t4-districts.parquet)
+* [berlin-lor-population-2022-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2022-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02-parquet/berlin-lor-population-2022-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2021 01
+### Berlin Lor Population 2023 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2021-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-city.csv)
-* [berlin-lor-population-2021-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-district-regions.csv)
-* [berlin-lor-population-2021-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-districts.csv)
-* [berlin-lor-population-2021-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2021-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t1-planning-areas.csv)
-* [berlin-lor-population-2021-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2-city.csv)
-* [berlin-lor-population-2021-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2-district-regions.csv)
-* [berlin-lor-population-2021-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2-districts.csv)
-* [berlin-lor-population-2021-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2021-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t2-planning-areas.csv)
-* [berlin-lor-population-2021-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3-city.csv)
-* [berlin-lor-population-2021-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3-district-regions.csv)
-* [berlin-lor-population-2021-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3-districts.csv)
-* [berlin-lor-population-2021-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2021-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t3-planning-areas.csv)
-* [berlin-lor-population-2021-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4-city.csv)
-* [berlin-lor-population-2021-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4-district-regions.csv)
-* [berlin-lor-population-2021-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4-districts.csv)
-* [berlin-lor-population-2021-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2021-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-01/berlin-lor-population-2021-01-t4-planning-areas.csv)
+* [berlin-lor-population-2023-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t1-city.csv)
+* [berlin-lor-population-2023-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t1-district-regions.csv)
+* [berlin-lor-population-2023-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t1-districts.csv)
+* [berlin-lor-population-2023-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2023-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t1-planning-areas.csv)
+* [berlin-lor-population-2023-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t2-city.csv)
+* [berlin-lor-population-2023-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t2-district-regions.csv)
+* [berlin-lor-population-2023-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t2-districts.csv)
+* [berlin-lor-population-2023-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2023-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t2-planning-areas.csv)
+* [berlin-lor-population-2023-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t3-city.csv)
+* [berlin-lor-population-2023-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t3-district-regions.csv)
+* [berlin-lor-population-2023-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t3-districts.csv)
+* [berlin-lor-population-2023-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2023-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t3-planning-areas.csv)
+* [berlin-lor-population-2023-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t4-city.csv)
+* [berlin-lor-population-2023-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t4-district-regions.csv)
+* [berlin-lor-population-2023-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t4-districts.csv)
+* [berlin-lor-population-2023-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2023-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-csv/berlin-lor-population-2023-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2021 02
+### Berlin Lor Population 2023 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2021-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2021-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-city.csv)
-* [berlin-lor-population-2021-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-district-regions.csv)
-* [berlin-lor-population-2021-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-districts.csv)
-* [berlin-lor-population-2021-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2021-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t1-planning-areas.csv)
-* [berlin-lor-population-2021-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2-city.csv)
-* [berlin-lor-population-2021-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2-district-regions.csv)
-* [berlin-lor-population-2021-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2-districts.csv)
-* [berlin-lor-population-2021-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2021-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t2-planning-areas.csv)
-* [berlin-lor-population-2021-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3-city.csv)
-* [berlin-lor-population-2021-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3-district-regions.csv)
-* [berlin-lor-population-2021-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3-districts.csv)
-* [berlin-lor-population-2021-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2021-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t3-planning-areas.csv)
-* [berlin-lor-population-2021-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4-city.csv)
-* [berlin-lor-population-2021-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4-district-regions.csv)
-* [berlin-lor-population-2021-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4-districts.csv)
-* [berlin-lor-population-2021-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2021-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2021-02/berlin-lor-population-2021-02-t4-planning-areas.csv)
+* [berlin-lor-population-2023-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t1-city.parquet)
+* [berlin-lor-population-2023-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t1-district-regions.parquet)
+* [berlin-lor-population-2023-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t1-districts.parquet)
+* [berlin-lor-population-2023-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2023-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2023-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t2-city.parquet)
+* [berlin-lor-population-2023-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t2-district-regions.parquet)
+* [berlin-lor-population-2023-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t2-districts.parquet)
+* [berlin-lor-population-2023-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2023-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2023-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t3-city.parquet)
+* [berlin-lor-population-2023-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t3-district-regions.parquet)
+* [berlin-lor-population-2023-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t3-districts.parquet)
+* [berlin-lor-population-2023-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2023-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2023-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t4-city.parquet)
+* [berlin-lor-population-2023-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t4-district-regions.parquet)
+* [berlin-lor-population-2023-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t4-districts.parquet)
+* [berlin-lor-population-2023-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2023-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01-parquet/berlin-lor-population-2023-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2022 01
+### Berlin Lor Population 2023 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2022-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-city.csv)
-* [berlin-lor-population-2022-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-district-regions.csv)
-* [berlin-lor-population-2022-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-districts.csv)
-* [berlin-lor-population-2022-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2022-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t1-planning-areas.csv)
-* [berlin-lor-population-2022-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2-city.csv)
-* [berlin-lor-population-2022-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2-district-regions.csv)
-* [berlin-lor-population-2022-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2-districts.csv)
-* [berlin-lor-population-2022-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2022-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t2-planning-areas.csv)
-* [berlin-lor-population-2022-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3-city.csv)
-* [berlin-lor-population-2022-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3-district-regions.csv)
-* [berlin-lor-population-2022-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3-districts.csv)
-* [berlin-lor-population-2022-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2022-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t3-planning-areas.csv)
-* [berlin-lor-population-2022-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4-city.csv)
-* [berlin-lor-population-2022-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4-district-regions.csv)
-* [berlin-lor-population-2022-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4-districts.csv)
-* [berlin-lor-population-2022-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2022-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-01/berlin-lor-population-2022-01-t4-planning-areas.csv)
+* [berlin-lor-population-2023-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t1-city.csv)
+* [berlin-lor-population-2023-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t1-district-regions.csv)
+* [berlin-lor-population-2023-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t1-districts.csv)
+* [berlin-lor-population-2023-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2023-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t1-planning-areas.csv)
+* [berlin-lor-population-2023-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t2-city.csv)
+* [berlin-lor-population-2023-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t2-district-regions.csv)
+* [berlin-lor-population-2023-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t2-districts.csv)
+* [berlin-lor-population-2023-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2023-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t2-planning-areas.csv)
+* [berlin-lor-population-2023-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t3-city.csv)
+* [berlin-lor-population-2023-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t3-district-regions.csv)
+* [berlin-lor-population-2023-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t3-districts.csv)
+* [berlin-lor-population-2023-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2023-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t3-planning-areas.csv)
+* [berlin-lor-population-2023-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t4-city.csv)
+* [berlin-lor-population-2023-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t4-district-regions.csv)
+* [berlin-lor-population-2023-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t4-districts.csv)
+* [berlin-lor-population-2023-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2023-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-csv/berlin-lor-population-2023-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2022 02
+### Berlin Lor Population 2023 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2022-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2022-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-city.csv)
-* [berlin-lor-population-2022-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-district-regions.csv)
-* [berlin-lor-population-2022-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-districts.csv)
-* [berlin-lor-population-2022-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2022-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t1-planning-areas.csv)
-* [berlin-lor-population-2022-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2-city.csv)
-* [berlin-lor-population-2022-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2-district-regions.csv)
-* [berlin-lor-population-2022-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2-districts.csv)
-* [berlin-lor-population-2022-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2022-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t2-planning-areas.csv)
-* [berlin-lor-population-2022-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3-city.csv)
-* [berlin-lor-population-2022-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3-district-regions.csv)
-* [berlin-lor-population-2022-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3-districts.csv)
-* [berlin-lor-population-2022-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2022-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t3-planning-areas.csv)
-* [berlin-lor-population-2022-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4-city.csv)
-* [berlin-lor-population-2022-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4-district-regions.csv)
-* [berlin-lor-population-2022-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4-districts.csv)
-* [berlin-lor-population-2022-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2022-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2022-02/berlin-lor-population-2022-02-t4-planning-areas.csv)
+* [berlin-lor-population-2023-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t1-city.parquet)
+* [berlin-lor-population-2023-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t1-district-regions.parquet)
+* [berlin-lor-population-2023-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t1-districts.parquet)
+* [berlin-lor-population-2023-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2023-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2023-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t2-city.parquet)
+* [berlin-lor-population-2023-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t2-district-regions.parquet)
+* [berlin-lor-population-2023-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t2-districts.parquet)
+* [berlin-lor-population-2023-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2023-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2023-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t3-city.parquet)
+* [berlin-lor-population-2023-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t3-district-regions.parquet)
+* [berlin-lor-population-2023-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t3-districts.parquet)
+* [berlin-lor-population-2023-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2023-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2023-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t4-city.parquet)
+* [berlin-lor-population-2023-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t4-district-regions.parquet)
+* [berlin-lor-population-2023-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t4-districts.parquet)
+* [berlin-lor-population-2023-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2023-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02-parquet/berlin-lor-population-2023-02-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2023 01
+### Berlin Lor Population 2024 01 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-01-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2023-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-city.csv)
-* [berlin-lor-population-2023-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-district-regions.csv)
-* [berlin-lor-population-2023-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-districts.csv)
-* [berlin-lor-population-2023-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2023-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t1-planning-areas.csv)
-* [berlin-lor-population-2023-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2-city.csv)
-* [berlin-lor-population-2023-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2-district-regions.csv)
-* [berlin-lor-population-2023-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2-districts.csv)
-* [berlin-lor-population-2023-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2023-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t2-planning-areas.csv)
-* [berlin-lor-population-2023-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3-city.csv)
-* [berlin-lor-population-2023-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3-district-regions.csv)
-* [berlin-lor-population-2023-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3-districts.csv)
-* [berlin-lor-population-2023-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2023-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t3-planning-areas.csv)
-* [berlin-lor-population-2023-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4-city.csv)
-* [berlin-lor-population-2023-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4-district-regions.csv)
-* [berlin-lor-population-2023-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4-districts.csv)
-* [berlin-lor-population-2023-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2023-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-01/berlin-lor-population-2023-01-t4-planning-areas.csv)
+* [berlin-lor-population-2024-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t1-city.csv)
+* [berlin-lor-population-2024-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t1-district-regions.csv)
+* [berlin-lor-population-2024-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t1-districts.csv)
+* [berlin-lor-population-2024-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t1-forecast-areas.csv)
+* [berlin-lor-population-2024-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t1-planning-areas.csv)
+* [berlin-lor-population-2024-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t2-city.csv)
+* [berlin-lor-population-2024-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t2-district-regions.csv)
+* [berlin-lor-population-2024-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t2-districts.csv)
+* [berlin-lor-population-2024-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t2-forecast-areas.csv)
+* [berlin-lor-population-2024-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t2-planning-areas.csv)
+* [berlin-lor-population-2024-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t3-city.csv)
+* [berlin-lor-population-2024-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t3-district-regions.csv)
+* [berlin-lor-population-2024-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t3-districts.csv)
+* [berlin-lor-population-2024-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t3-forecast-areas.csv)
+* [berlin-lor-population-2024-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t3-planning-areas.csv)
+* [berlin-lor-population-2024-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t4-city.csv)
+* [berlin-lor-population-2024-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t4-district-regions.csv)
+* [berlin-lor-population-2024-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t4-districts.csv)
+* [berlin-lor-population-2024-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t4-forecast-areas.csv)
+* [berlin-lor-population-2024-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-csv/berlin-lor-population-2024-01-t4-planning-areas.csv)
 
-### Berlin Lor Population 2023 02
+### Berlin Lor Population 2024 01 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2023-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-01-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2023-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-city.csv)
-* [berlin-lor-population-2023-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-district-regions.csv)
-* [berlin-lor-population-2023-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-districts.csv)
-* [berlin-lor-population-2023-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2023-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t1-planning-areas.csv)
-* [berlin-lor-population-2023-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2-city.csv)
-* [berlin-lor-population-2023-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2-district-regions.csv)
-* [berlin-lor-population-2023-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2-districts.csv)
-* [berlin-lor-population-2023-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2023-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t2-planning-areas.csv)
-* [berlin-lor-population-2023-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3-city.csv)
-* [berlin-lor-population-2023-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3-district-regions.csv)
-* [berlin-lor-population-2023-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3-districts.csv)
-* [berlin-lor-population-2023-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2023-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t3-planning-areas.csv)
-* [berlin-lor-population-2023-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4-city.csv)
-* [berlin-lor-population-2023-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4-district-regions.csv)
-* [berlin-lor-population-2023-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4-districts.csv)
-* [berlin-lor-population-2023-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2023-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2023-02/berlin-lor-population-2023-02-t4-planning-areas.csv)
+* [berlin-lor-population-2024-01-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t1-city.parquet)
+* [berlin-lor-population-2024-01-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t1-district-regions.parquet)
+* [berlin-lor-population-2024-01-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t1-districts.parquet)
+* [berlin-lor-population-2024-01-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t1-forecast-areas.parquet)
+* [berlin-lor-population-2024-01-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t1-planning-areas.parquet)
+* [berlin-lor-population-2024-01-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t2-city.parquet)
+* [berlin-lor-population-2024-01-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t2-district-regions.parquet)
+* [berlin-lor-population-2024-01-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t2-districts.parquet)
+* [berlin-lor-population-2024-01-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t2-forecast-areas.parquet)
+* [berlin-lor-population-2024-01-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t2-planning-areas.parquet)
+* [berlin-lor-population-2024-01-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t3-city.parquet)
+* [berlin-lor-population-2024-01-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t3-district-regions.parquet)
+* [berlin-lor-population-2024-01-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t3-districts.parquet)
+* [berlin-lor-population-2024-01-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t3-forecast-areas.parquet)
+* [berlin-lor-population-2024-01-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t3-planning-areas.parquet)
+* [berlin-lor-population-2024-01-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t4-city.parquet)
+* [berlin-lor-population-2024-01-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t4-district-regions.parquet)
+* [berlin-lor-population-2024-01-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t4-districts.parquet)
+* [berlin-lor-population-2024-01-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t4-forecast-areas.parquet)
+* [berlin-lor-population-2024-01-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01-parquet/berlin-lor-population-2024-01-t4-planning-areas.parquet)
 
-### Berlin Lor Population 2024 01
+### Berlin Lor Population 2024 02 Csv
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-01
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-02-csv
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2024-01-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-city.csv)
-* [berlin-lor-population-2024-01-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-district-regions.csv)
-* [berlin-lor-population-2024-01-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-districts.csv)
-* [berlin-lor-population-2024-01-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-forecast-areas.csv)
-* [berlin-lor-population-2024-01-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t1-planning-areas.csv)
-* [berlin-lor-population-2024-01-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2-city.csv)
-* [berlin-lor-population-2024-01-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2-district-regions.csv)
-* [berlin-lor-population-2024-01-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2-districts.csv)
-* [berlin-lor-population-2024-01-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2-forecast-areas.csv)
-* [berlin-lor-population-2024-01-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t2-planning-areas.csv)
-* [berlin-lor-population-2024-01-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3-city.csv)
-* [berlin-lor-population-2024-01-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3-district-regions.csv)
-* [berlin-lor-population-2024-01-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3-districts.csv)
-* [berlin-lor-population-2024-01-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3-forecast-areas.csv)
-* [berlin-lor-population-2024-01-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t3-planning-areas.csv)
-* [berlin-lor-population-2024-01-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4-city.csv)
-* [berlin-lor-population-2024-01-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4-district-regions.csv)
-* [berlin-lor-population-2024-01-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4-districts.csv)
-* [berlin-lor-population-2024-01-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4-forecast-areas.csv)
-* [berlin-lor-population-2024-01-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-01/berlin-lor-population-2024-01-t4-planning-areas.csv)
+* [berlin-lor-population-2024-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t1-city.csv)
+* [berlin-lor-population-2024-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t1-district-regions.csv)
+* [berlin-lor-population-2024-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t1-districts.csv)
+* [berlin-lor-population-2024-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t1-forecast-areas.csv)
+* [berlin-lor-population-2024-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t1-planning-areas.csv)
+* [berlin-lor-population-2024-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t2-city.csv)
+* [berlin-lor-population-2024-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t2-district-regions.csv)
+* [berlin-lor-population-2024-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t2-districts.csv)
+* [berlin-lor-population-2024-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t2-forecast-areas.csv)
+* [berlin-lor-population-2024-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t2-planning-areas.csv)
+* [berlin-lor-population-2024-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t3-city.csv)
+* [berlin-lor-population-2024-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t3-district-regions.csv)
+* [berlin-lor-population-2024-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t3-districts.csv)
+* [berlin-lor-population-2024-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t3-forecast-areas.csv)
+* [berlin-lor-population-2024-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t3-planning-areas.csv)
+* [berlin-lor-population-2024-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t4-city.csv)
+* [berlin-lor-population-2024-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t4-district-regions.csv)
+* [berlin-lor-population-2024-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t4-districts.csv)
+* [berlin-lor-population-2024-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t4-forecast-areas.csv)
+* [berlin-lor-population-2024-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-csv/berlin-lor-population-2024-02-t4-planning-areas.csv)
 
-### Berlin Lor Population 2024 02
+### Berlin Lor Population 2024 02 Parquet
 
 * owner: Open Data product
-* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-02
+* url: https://github.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/tree/main/data/03-gold/berlin-lor-population-2024-02-parquet
 * license: CC-BY 4.0
-* updated: 2025-07-20
+* updated: 2025-10-26
 
 **Files**
 
-* [berlin-lor-population-2024-02-t1-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-city.csv)
-* [berlin-lor-population-2024-02-t1-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-district-regions.csv)
-* [berlin-lor-population-2024-02-t1-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-districts.csv)
-* [berlin-lor-population-2024-02-t1-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-forecast-areas.csv)
-* [berlin-lor-population-2024-02-t1-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t1-planning-areas.csv)
-* [berlin-lor-population-2024-02-t2-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2-city.csv)
-* [berlin-lor-population-2024-02-t2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2-district-regions.csv)
-* [berlin-lor-population-2024-02-t2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2-districts.csv)
-* [berlin-lor-population-2024-02-t2-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2-forecast-areas.csv)
-* [berlin-lor-population-2024-02-t2-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t2-planning-areas.csv)
-* [berlin-lor-population-2024-02-t3-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3-city.csv)
-* [berlin-lor-population-2024-02-t3-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3-district-regions.csv)
-* [berlin-lor-population-2024-02-t3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3-districts.csv)
-* [berlin-lor-population-2024-02-t3-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3-forecast-areas.csv)
-* [berlin-lor-population-2024-02-t3-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t3-planning-areas.csv)
-* [berlin-lor-population-2024-02-t4-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4-city.csv)
-* [berlin-lor-population-2024-02-t4-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4-district-regions.csv)
-* [berlin-lor-population-2024-02-t4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4-districts.csv)
-* [berlin-lor-population-2024-02-t4-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4-forecast-areas.csv)
-* [berlin-lor-population-2024-02-t4-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02/berlin-lor-population-2024-02-t4-planning-areas.csv)
+* [berlin-lor-population-2024-02-t1-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t1-city.parquet)
+* [berlin-lor-population-2024-02-t1-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t1-district-regions.parquet)
+* [berlin-lor-population-2024-02-t1-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t1-districts.parquet)
+* [berlin-lor-population-2024-02-t1-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t1-forecast-areas.parquet)
+* [berlin-lor-population-2024-02-t1-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t1-planning-areas.parquet)
+* [berlin-lor-population-2024-02-t2-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t2-city.parquet)
+* [berlin-lor-population-2024-02-t2-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t2-district-regions.parquet)
+* [berlin-lor-population-2024-02-t2-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t2-districts.parquet)
+* [berlin-lor-population-2024-02-t2-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t2-forecast-areas.parquet)
+* [berlin-lor-population-2024-02-t2-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t2-planning-areas.parquet)
+* [berlin-lor-population-2024-02-t3-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t3-city.parquet)
+* [berlin-lor-population-2024-02-t3-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t3-district-regions.parquet)
+* [berlin-lor-population-2024-02-t3-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t3-districts.parquet)
+* [berlin-lor-population-2024-02-t3-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t3-forecast-areas.parquet)
+* [berlin-lor-population-2024-02-t3-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t3-planning-areas.parquet)
+* [berlin-lor-population-2024-02-t4-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t4-city.parquet)
+* [berlin-lor-population-2024-02-t4-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t4-district-regions.parquet)
+* [berlin-lor-population-2024-02-t4-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t4-districts.parquet)
+* [berlin-lor-population-2024-02-t4-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t4-forecast-areas.parquet)
+* [berlin-lor-population-2024-02-t4-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/main/data/03-gold/berlin-lor-population-2024-02-parquet/berlin-lor-population-2024-02-t4-planning-areas.parquet)
 
 ## Classification
 
