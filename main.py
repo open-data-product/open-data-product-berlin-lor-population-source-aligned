@@ -1,3 +1,14 @@
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "click>=8.2.1",
+#     "open-data-product-python-lib",
+# ]
+#
+# [tool.uv.sources]
+# open-data-product-python-lib = { git = "https://github.com/open-data-product/open-data-product-python-lib.git" }
+# ///
+
 import os
 import sys
 

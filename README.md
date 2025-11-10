@@ -41,7 +41,13 @@ uv venv
 source .venv/bin/activate
 ```
 
-Run this command to re-install the Open Data Product Python library.
+Run this command to install dependencies defined in `pyproject.toml`.
+
+```shell
+uv sync
+```
+
+Run this command to re-install the Open Data Product Python library (if necessary).
 
 ```shell
 uv pip install --no-cache-dir git+https://github.com/open-data-product/open-data-product-python-lib.git
@@ -50,12 +56,7 @@ uv pip install --no-cache-dir git+https://github.com/open-data-product/open-data
 Run this command to start the main script.
 
 ```shell
-Usage: main.py [OPTIONS]
-
-Options:
-  --clean BOOLEAN  Regenerate results
-  --quiet BOOLEAN  Do not log outputs
-  --help           Show this message and exit.
+uv run main.py
 ```
 
 ## Roadmap
