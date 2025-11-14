@@ -1,0 +1,805 @@
+---
+dataProductDescriptor: 1.0.0
+info:
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:berlin-lor-population-source-aligned:1.0
+  name: Berlin LOR Population (source-aligned)
+  version: '1.0'
+  domain: ''
+  owner:
+    id: Open Data product
+    name: Open Data product
+  id: berlin-lor-population-source-aligned
+  entityType:
+  displayName: Berlin LOR Population (source-aligned)
+  description: Source-aligned data product providing Berlin LOR population data
+  contactPoints:
+interfaceComponents:
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-01-csv
+      fullyQualifiedName: berlin-lor-population-2015-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-01-parquet
+      fullyQualifiedName: berlin-lor-population-2015-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-02-csv
+      fullyQualifiedName: berlin-lor-population-2015-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-02-parquet
+      fullyQualifiedName: berlin-lor-population-2015-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-01-csv
+      fullyQualifiedName: berlin-lor-population-2016-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-01-parquet
+      fullyQualifiedName: berlin-lor-population-2016-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-02-csv
+      fullyQualifiedName: berlin-lor-population-2016-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-02-parquet
+      fullyQualifiedName: berlin-lor-population-2016-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-01-csv
+      fullyQualifiedName: berlin-lor-population-2017-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-01-parquet
+      fullyQualifiedName: berlin-lor-population-2017-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-02-csv
+      fullyQualifiedName: berlin-lor-population-2017-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-02-parquet
+      fullyQualifiedName: berlin-lor-population-2017-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-01-csv
+      fullyQualifiedName: berlin-lor-population-2018-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-01-parquet
+      fullyQualifiedName: berlin-lor-population-2018-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-02-csv
+      fullyQualifiedName: berlin-lor-population-2018-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-02-parquet
+      fullyQualifiedName: berlin-lor-population-2018-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-01-csv
+      fullyQualifiedName: berlin-lor-population-2019-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-01-parquet
+      fullyQualifiedName: berlin-lor-population-2019-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-02-csv
+      fullyQualifiedName: berlin-lor-population-2019-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-02-parquet
+      fullyQualifiedName: berlin-lor-population-2019-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-01-csv
+      fullyQualifiedName: berlin-lor-population-2020-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-01-parquet
+      fullyQualifiedName: berlin-lor-population-2020-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-02-csv
+      fullyQualifiedName: berlin-lor-population-2020-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-02-parquet
+      fullyQualifiedName: berlin-lor-population-2020-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-01-csv
+      fullyQualifiedName: berlin-lor-population-2021-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-01-parquet
+      fullyQualifiedName: berlin-lor-population-2021-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-02-csv
+      fullyQualifiedName: berlin-lor-population-2021-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-02-parquet
+      fullyQualifiedName: berlin-lor-population-2021-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-01-csv
+      fullyQualifiedName: berlin-lor-population-2022-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-01-parquet
+      fullyQualifiedName: berlin-lor-population-2022-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-02-csv
+      fullyQualifiedName: berlin-lor-population-2022-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-02-parquet
+      fullyQualifiedName: berlin-lor-population-2022-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-01-csv
+      fullyQualifiedName: berlin-lor-population-2023-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-01-parquet
+      fullyQualifiedName: berlin-lor-population-2023-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-02-csv
+      fullyQualifiedName: berlin-lor-population-2023-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-02-parquet
+      fullyQualifiedName: berlin-lor-population-2023-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-01-csv
+      fullyQualifiedName: berlin-lor-population-2024-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-01-parquet
+      fullyQualifiedName: berlin-lor-population-2024-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-02-csv
+      fullyQualifiedName: berlin-lor-population-2024-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-02-parquet
+      fullyQualifiedName: berlin-lor-population-2024-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-01
+      fullyQualifiedName: berlin-lor-population-2015-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2015-02
+      fullyQualifiedName: berlin-lor-population-2015-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-01
+      fullyQualifiedName: berlin-lor-population-2016-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2016-02
+      fullyQualifiedName: berlin-lor-population-2016-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-01
+      fullyQualifiedName: berlin-lor-population-2017-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2017-02
+      fullyQualifiedName: berlin-lor-population-2017-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-01
+      fullyQualifiedName: berlin-lor-population-2018-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2018-02
+      fullyQualifiedName: berlin-lor-population-2018-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-01
+      fullyQualifiedName: berlin-lor-population-2019-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2019-02
+      fullyQualifiedName: berlin-lor-population-2019-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-01
+      fullyQualifiedName: berlin-lor-population-2020-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2020-02
+      fullyQualifiedName: berlin-lor-population-2020-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-01
+      fullyQualifiedName: berlin-lor-population-2021-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2021-02
+      fullyQualifiedName: berlin-lor-population-2021-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-01
+      fullyQualifiedName: berlin-lor-population-2022-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2022-02
+      fullyQualifiedName: berlin-lor-population-2022-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-01
+      fullyQualifiedName: berlin-lor-population-2023-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2023-02
+      fullyQualifiedName: berlin-lor-population-2023-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-01
+      fullyQualifiedName: berlin-lor-population-2024-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-population-2024-02
+      fullyQualifiedName: berlin-lor-population-2024-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:

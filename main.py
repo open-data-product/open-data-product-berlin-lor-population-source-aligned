@@ -22,6 +22,7 @@ from opendataproduct.config.data_transformation_gold_loader import (
 from opendataproduct.config.data_transformation_silver_loader import (
     load_data_transformation_silver,
 )
+from opendataproduct.config.dpds_loader import load_dpds
 from opendataproduct.config.odps_loader import load_odps
 from opendataproduct.document.data_product_canvas_generator import (
     generate_data_product_canvas,
@@ -29,7 +30,13 @@ from opendataproduct.document.data_product_canvas_generator import (
 from opendataproduct.document.data_product_manifest_updater import (
     update_data_product_manifest,
 )
+from opendataproduct.document.dpds_canvas_generator import generate_dpds_canvas
+from opendataproduct.document.dpds_updater import update_dpds
+from opendataproduct.document.jupyter_notebook_creator import (
+    create_jupyter_notebook_for_csv,
+)
 from opendataproduct.document.odps_canvas_generator import generate_odps_canvas
+from opendataproduct.document.odps_updater import update_odps
 from opendataproduct.extract.data_extractor import extract_data
 from opendataproduct.transform.data_aggregator import aggregate_data
 from opendataproduct.transform.data_copier import copy_data
@@ -55,6 +62,7 @@ def main(clean, quiet):
     )
     data_transformation_gold = load_data_transformation_gold(config_path=script_path)
     odps = load_odps(config_path=script_path)
+    dpds = load_dpds(config_path=script_path)
 
     #
     # Bronze: Integrate
@@ -103,11 +111,31 @@ def main(clean, quiet):
     # Documentation
     #
 
+    create_jupyter_notebook_for_csv(
+        data_product_manifest=data_product_manifest,
+        results_path=script_path,
+        data_path=gold_path,
+        clean=True,
+        quiet=quiet,
+    )
+
     update_data_product_manifest(
         data_product_manifest=data_product_manifest,
         config_path=script_path,
         data_paths=[gold_path],
         file_endings=(".csv", ".parquet"),
+    )
+
+    update_odps(
+        data_product_manifest=data_product_manifest,
+        odps=odps,
+        config_path=script_path,
+    )
+
+    update_dpds(
+        data_product_manifest=data_product_manifest,
+        dpds=dpds,
+        config_path=script_path,
     )
 
     generate_data_product_canvas(
@@ -117,6 +145,11 @@ def main(clean, quiet):
 
     generate_odps_canvas(
         odps=odps,
+        docs_path=docs_path,
+    )
+
+    generate_dpds_canvas(
+        dpds=dpds,
         docs_path=docs_path,
     )
 
